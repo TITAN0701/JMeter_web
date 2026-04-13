@@ -1,0 +1,620 @@
+2026-04-09 18:51:54,038 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-04-09 18:51:54,056 INFO o.a.j.JMeter: Loading user properties from: C:\Users\suppo\Desktop\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\user.properties
+2026-04-09 18:51:54,057 INFO o.a.j.JMeter: Loading system properties from: C:\Users\suppo\Desktop\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\system.properties
+2026-04-09 18:51:54,057 INFO o.a.j.JMeter: Setting System property: java.awt.headless=true
+2026-04-09 18:51:54,064 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-04-09 18:51:54,064 INFO o.a.j.JMeter: Version 5.6.3
+2026-04-09 18:51:54,064 INFO o.a.j.JMeter: java.version=25.0.1
+2026-04-09 18:51:54,064 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2026-04-09 18:51:54,065 INFO o.a.j.JMeter: os.name=Windows 11
+2026-04-09 18:51:54,065 INFO o.a.j.JMeter: os.arch=amd64
+2026-04-09 18:51:54,065 INFO o.a.j.JMeter: os.version=10.0
+2026-04-09 18:51:54,065 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-04-09 18:51:54,065 INFO o.a.j.JMeter: java.awt.headless=true
+2026-04-09 18:51:54,065 INFO o.a.j.JMeter: Max memory     =2147483648
+2026-04-09 18:51:54,065 INFO o.a.j.JMeter: Available Processors =16
+2026-04-09 18:51:54,081 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-04-09 18:51:54,081 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-04-09 18:51:54,081 INFO o.a.j.JMeter: JMeterHome=C:\Users\suppo\Desktop\apache-jmeter-5.6.3\apache-jmeter-5.6.3
+2026-04-09 18:51:54,081 INFO o.a.j.JMeter: user.dir  =C:\Users\suppo\Desktop\國衛院-兒童web\stress
+2026-04-09 18:51:54,082 INFO o.a.j.JMeter: PWD       =C:\Users\suppo\Desktop\國衛院-兒童web\stress
+2026-04-09 18:51:59,045 INFO o.a.j.JMeter: IP: 192.168.0.176 Name: Ruenxin FullName: Ruenxin
+2026-04-09 18:51:59,058 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'C:\Users\suppo\Desktop\國衛院-兒童web\stress\results\pressure_100u_20m_v5\html-report'
+2026-04-09 18:51:59,062 INFO o.a.j.s.FileServer: Default base='C:\Users\suppo\Desktop\國衛院-兒童web\stress'
+2026-04-09 18:51:59,064 INFO o.a.j.s.FileServer: Set new base='C:\Users\suppo\Desktop\國衛院-兒童web\stress\results\pressure_100u_20m_v5'
+2026-04-09 18:51:59,352 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-04-09 18:51:59,372 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-04-09 18:51:59,376 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-04-09 18:51:59,381 INFO o.a.j.s.SaveService: Loading file: C:\Users\suppo\Desktop\國衛院-兒童web\stress\results\pressure_100u_20m_v5\generated-test-plan.jmx
+2026-04-09 18:51:59,417 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2026-04-09 18:51:59,420 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2026-04-09 18:51:59,724 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
+2026-04-09 18:51:59,725 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file C:\Users\suppo\Desktop\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\proxyserver.jks
+2026-04-09 18:51:59,748 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-04-09 18:51:59,748 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-04-09 18:51:59,748 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-04-09 18:51:59,748 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-04-09 18:51:59,748 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-04-09 18:51:59,748 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-04-09 18:52:00,247 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-04-09 18:52:00,255 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2026-04-09 18:52:00,255 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: C:\Users\suppo\Desktop\國衛院-兒童web\stress\results\pressure_100u_20m_v5\results.jtl
+2026-04-09 18:52:00,256 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: C:\Users\suppo\Desktop\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\reportgenerator.properties
+2026-04-09 18:52:00,256 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2026-04-09 18:52:00,262 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2026-04-09 18:52:00,265 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2026-04-09 18:52:00,265 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2026-04-09 18:52:00,266 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2026-04-09 18:52:00,266 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2026-04-09 18:52:00,266 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2026-04-09 18:52:00,266 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2026-04-09 18:52:00,266 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2026-04-09 18:52:00,266 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2026-04-09 18:52:00,271 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2026-04-09 18:52:00,271 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-04-09 18:52:00,271 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2026-04-09 18:52:00,271 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2026-04-09 18:52:00,271 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2026-04-09 18:52:00,271 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2026-04-09 18:52:00,271 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-04-09 18:52:00,272 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-04-09 18:52:00,272 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-04-09 18:52:00,272 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-04-09 18:52:00,272 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2026-04-09 18:52:00,272 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2026-04-09 18:52:00,274 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2026-04-09 18:52:00,274 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2026-04-09 18:52:00,274 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2026-04-09 18:52:00,274 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2026-04-09 18:52:00,290 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-04-09 18:52:00,292 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-04-09 18:52:00,292 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-04-09 18:52:00,297 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-04-09 18:52:00,297 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-04-09 18:52:00,486 INFO o.a.j.JMeter: Running test (1775731920486)
+2026-04-09 18:52:00,513 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : WETPAINT Group
+2026-04-09 18:52:00,514 INFO o.a.j.e.StandardJMeterEngine: Starting 100 threads for group WETPAINT Group.
+2026-04-09 18:52:00,514 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-04-09 18:52:00,514 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=100 ramp-up=60 delayedStart=false
+2026-04-09 18:52:00,542 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-04-09 18:52:00,542 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-04-09 18:52:00,542 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-04-09 18:52:00,542 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-04-09 18:52:00,609 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-1
+2026-04-09 18:52:00,614 INFO o.a.j.s.FileServer: Stored: C:\Users\suppo\Desktop\國衛院-兒童web\stress\users.csv
+2026-04-09 18:52:00,662 INFO o.a.j.t.p.ConstantPoissonProcessGenerator: Generated 20000 timings (Precise Throughput Timer 20000 required, rate 16.666666666666668, duration 1200) in 14 ms. First 15 events will be fired at: 0.09573136177190023 (+0.09573136177190023), 0.2832779321059853 (+0.18754657033408506), 0.29002644354965135 (+0.006748511443666061), 0.30710481157529834 (+0.017078368025646995), 0.32011999988279527 (+0.013015188307496928), 0.3391767951456792 (+0.019056795262883952), 0.468681134496407 (+0.1295043393507278), 0.4769148776664789 (+0.008233743170071861), 0.48704094415925603 (+0.010126066492777142), 0.5193547142553712 (+0.032313770096115135), 0.5349546108240233 (+0.015599896568652127), 0.5617124475699509 (+0.026757836745927577), 0.6479188210064546 (+0.08620637343650372), 0.7450462864070584 (+0.0971274654006038), 0.7992267305277245 (+0.05418044412066614)
+2026-04-09 18:52:00,685 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = Ruenxin
+2026-04-09 18:52:00,694 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-04-09 18:52:00,840 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2026-04-09 18:52:00,847 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2026-04-09 18:52:00,847 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2026-04-09 18:52:00,963 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2026-04-09 18:52:00,967 INFO o.a.j.u.SSLManager: KeyStore created OK
+2026-04-09 18:52:00,968 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2026-04-09 18:52:01,189 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-04-09 18:52:01,189 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-04-09 18:52:01,195 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-2
+2026-04-09 18:52:01,309 INFO o.a.j.r.Summariser: summary +      1 in 00:00:01 =    1.2/s Avg:    73 Min:    73 Max:    73 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+2026-04-09 18:52:01,788 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-3
+2026-04-09 18:52:02,369 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-4
+2026-04-09 18:52:02,960 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-5
+2026-04-09 18:52:03,548 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-6
+2026-04-09 18:52:04,138 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-7
+2026-04-09 18:52:04,731 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-8
+2026-04-09 18:52:05,334 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-9
+2026-04-09 18:52:05,930 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-10
+2026-04-09 18:52:06,531 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-11
+2026-04-09 18:52:07,143 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-12
+2026-04-09 18:52:07,732 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-13
+2026-04-09 18:52:08,333 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-14
+2026-04-09 18:52:08,929 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-15
+2026-04-09 18:52:09,534 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-16
+2026-04-09 18:52:10,131 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-17
+2026-04-09 18:52:10,727 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-18
+2026-04-09 18:52:11,326 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-19
+2026-04-09 18:52:11,928 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-20
+2026-04-09 18:52:12,524 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-21
+2026-04-09 18:52:13,126 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-22
+2026-04-09 18:52:13,730 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-23
+2026-04-09 18:52:14,328 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-24
+2026-04-09 18:52:14,927 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-25
+2026-04-09 18:52:15,524 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-26
+2026-04-09 18:52:16,127 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-27
+2026-04-09 18:52:16,727 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-28
+2026-04-09 18:52:17,326 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-29
+2026-04-09 18:52:17,946 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-30
+2026-04-09 18:52:18,525 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-31
+2026-04-09 18:52:19,123 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-32
+2026-04-09 18:52:19,726 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-33
+2026-04-09 18:52:20,332 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-34
+2026-04-09 18:52:20,935 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-35
+2026-04-09 18:52:21,530 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-36
+2026-04-09 18:52:22,127 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-37
+2026-04-09 18:52:22,729 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-38
+2026-04-09 18:52:23,330 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-39
+2026-04-09 18:52:23,929 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-40
+2026-04-09 18:52:24,547 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-41
+2026-04-09 18:52:25,130 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-42
+2026-04-09 18:52:25,727 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-43
+2026-04-09 18:52:26,327 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-44
+2026-04-09 18:52:26,927 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-45
+2026-04-09 18:52:27,526 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-46
+2026-04-09 18:52:28,124 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-47
+2026-04-09 18:52:28,731 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-48
+2026-04-09 18:52:29,338 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-49
+2026-04-09 18:52:29,927 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-50
+2026-04-09 18:52:30,024 INFO o.a.j.r.Summariser: summary +    475 in 00:00:29 =   16.5/s Avg:    28 Min:    10 Max:   554 Err:     0 (0.00%) Active: 50 Started: 50 Finished: 0
+2026-04-09 18:52:30,024 INFO o.a.j.r.Summariser: summary =    476 in 00:00:30 =   16.1/s Avg:    28 Min:    10 Max:   554 Err:     0 (0.00%)
+2026-04-09 18:52:30,561 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-51
+2026-04-09 18:52:31,163 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-52
+2026-04-09 18:52:31,723 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-53
+2026-04-09 18:52:32,323 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-54
+2026-04-09 18:52:32,923 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-55
+2026-04-09 18:52:33,523 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-56
+2026-04-09 18:52:34,124 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-57
+2026-04-09 18:52:34,726 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-58
+2026-04-09 18:52:35,325 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-59
+2026-04-09 18:52:35,926 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-60
+2026-04-09 18:52:36,526 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-61
+2026-04-09 18:52:37,127 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-62
+2026-04-09 18:52:37,727 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-63
+2026-04-09 18:52:38,327 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-64
+2026-04-09 18:52:38,925 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-65
+2026-04-09 18:52:39,522 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-66
+2026-04-09 18:52:40,125 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-67
+2026-04-09 18:52:40,727 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-68
+2026-04-09 18:52:41,324 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-69
+2026-04-09 18:52:41,926 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-70
+2026-04-09 18:52:42,523 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-71
+2026-04-09 18:52:43,123 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-72
+2026-04-09 18:52:43,722 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-73
+2026-04-09 18:52:44,327 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-74
+2026-04-09 18:52:44,925 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-75
+2026-04-09 18:52:45,524 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-76
+2026-04-09 18:52:46,124 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-77
+2026-04-09 18:52:46,725 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-78
+2026-04-09 18:52:47,324 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-79
+2026-04-09 18:52:47,935 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-80
+2026-04-09 18:52:48,524 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-81
+2026-04-09 18:52:49,123 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-82
+2026-04-09 18:52:49,724 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-83
+2026-04-09 18:52:50,323 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-84
+2026-04-09 18:52:50,928 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-85
+2026-04-09 18:52:51,534 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-86
+2026-04-09 18:52:52,125 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-87
+2026-04-09 18:52:52,726 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-88
+2026-04-09 18:52:53,330 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-89
+2026-04-09 18:52:53,929 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-90
+2026-04-09 18:52:54,571 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-91
+2026-04-09 18:52:55,124 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-92
+2026-04-09 18:52:55,726 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-93
+2026-04-09 18:52:56,324 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-94
+2026-04-09 18:52:56,923 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-95
+2026-04-09 18:52:57,524 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-96
+2026-04-09 18:52:58,122 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-97
+2026-04-09 18:52:58,722 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-98
+2026-04-09 18:52:59,323 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-99
+2026-04-09 18:52:59,925 INFO o.a.j.t.JMeterThread: Thread started: WETPAINT Group 1-100
+2026-04-09 18:53:00,041 INFO o.a.j.r.Summariser: summary +    541 in 00:00:30 =   18.0/s Avg:    34 Min:    10 Max:   545 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 18:53:00,042 INFO o.a.j.r.Summariser: summary =   1017 in 00:01:00 =   17.1/s Avg:    31 Min:    10 Max:   554 Err:     0 (0.00%)
+2026-04-09 18:53:30,003 INFO o.a.j.r.Summariser: summary +    492 in 00:00:30 =   16.4/s Avg:    31 Min:    12 Max:   356 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 18:53:30,003 INFO o.a.j.r.Summariser: summary =   1509 in 00:01:30 =   16.9/s Avg:    31 Min:    10 Max:   554 Err:     0 (0.00%)
+2026-04-09 18:54:00,089 INFO o.a.j.r.Summariser: summary +    545 in 00:00:30 =   18.1/s Avg:    27 Min:    10 Max:   567 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 18:54:00,089 INFO o.a.j.r.Summariser: summary =   2054 in 00:02:00 =   17.2/s Avg:    30 Min:    10 Max:   567 Err:     0 (0.00%)
+2026-04-09 18:54:30,138 INFO o.a.j.r.Summariser: summary +    524 in 00:00:30 =   17.4/s Avg:    25 Min:    13 Max:   289 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 18:54:30,138 INFO o.a.j.r.Summariser: summary =   2578 in 00:02:30 =   17.2/s Avg:    29 Min:    10 Max:   567 Err:     0 (0.00%)
+2026-04-09 18:55:00,015 INFO o.a.j.r.Summariser: summary +    537 in 00:00:30 =   18.0/s Avg:    30 Min:    10 Max:   578 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 18:55:00,026 INFO o.a.j.r.Summariser: summary =   3115 in 00:03:00 =   17.4/s Avg:    29 Min:    10 Max:   578 Err:     0 (0.00%)
+2026-04-09 18:55:30,131 INFO o.a.j.r.Summariser: summary +    460 in 00:00:30 =   15.3/s Avg:    27 Min:    12 Max:   599 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 18:55:30,132 INFO o.a.j.r.Summariser: summary =   3575 in 00:03:30 =   17.1/s Avg:    29 Min:    10 Max:   599 Err:     0 (0.00%)
+2026-04-09 18:56:00,024 INFO o.a.j.r.Summariser: summary +    521 in 00:00:30 =   17.4/s Avg:    25 Min:    11 Max:   261 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 18:56:00,025 INFO o.a.j.r.Summariser: summary =   4096 in 00:04:00 =   17.1/s Avg:    28 Min:    10 Max:   599 Err:     0 (0.00%)
+2026-04-09 18:56:30,078 INFO o.a.j.r.Summariser: summary +    499 in 00:00:30 =   16.6/s Avg:    23 Min:    11 Max:   294 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 18:56:30,078 INFO o.a.j.r.Summariser: summary =   4595 in 00:04:30 =   17.0/s Avg:    28 Min:    10 Max:   599 Err:     0 (0.00%)
+2026-04-09 18:57:00,004 INFO o.a.j.r.Summariser: summary +    507 in 00:00:30 =   16.9/s Avg:    24 Min:    11 Max:   275 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 18:57:00,005 INFO o.a.j.r.Summariser: summary =   5102 in 00:05:00 =   17.0/s Avg:    27 Min:    10 Max:   599 Err:     0 (0.00%)
+2026-04-09 18:57:30,119 INFO o.a.j.r.Summariser: summary +    490 in 00:00:30 =   16.3/s Avg:    27 Min:    12 Max:   577 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 18:57:30,119 INFO o.a.j.r.Summariser: summary =   5592 in 00:05:30 =   17.0/s Avg:    27 Min:    10 Max:   599 Err:     0 (0.00%)
+2026-04-09 18:58:00,071 INFO o.a.j.r.Summariser: summary +    489 in 00:00:30 =   16.3/s Avg:    27 Min:    13 Max:   276 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 18:58:00,072 INFO o.a.j.r.Summariser: summary =   6081 in 00:06:00 =   16.9/s Avg:    27 Min:    10 Max:   599 Err:     0 (0.00%)
+2026-04-09 18:58:30,022 INFO o.a.j.r.Summariser: summary +    508 in 00:00:30 =   17.0/s Avg:    29 Min:    13 Max:  1053 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 18:58:30,023 INFO o.a.j.r.Summariser: summary =   6589 in 00:06:30 =   16.9/s Avg:    27 Min:    10 Max:  1053 Err:     0 (0.00%)
+2026-04-09 18:59:00,035 INFO o.a.j.r.Summariser: summary +    511 in 00:00:30 =   17.0/s Avg:    29 Min:    11 Max:   582 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 18:59:00,035 INFO o.a.j.r.Summariser: summary =   7100 in 00:07:00 =   16.9/s Avg:    28 Min:    10 Max:  1053 Err:     0 (0.00%)
+2026-04-09 18:59:30,070 INFO o.a.j.r.Summariser: summary +    471 in 00:00:30 =   15.7/s Avg:    29 Min:    12 Max:   290 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 18:59:30,070 INFO o.a.j.r.Summariser: summary =   7571 in 00:07:30 =   16.8/s Avg:    28 Min:    10 Max:  1053 Err:     0 (0.00%)
+2026-04-09 19:00:00,006 INFO o.a.j.r.Summariser: summary +    478 in 00:00:30 =   16.0/s Avg:    29 Min:    13 Max:   298 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:00:00,016 INFO o.a.j.r.Summariser: summary =   8049 in 00:08:00 =   16.8/s Avg:    28 Min:    10 Max:  1053 Err:     0 (0.00%)
+2026-04-09 19:00:30,163 INFO o.a.j.r.Summariser: summary +    539 in 00:00:30 =   17.9/s Avg:    25 Min:    11 Max:   258 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:00:30,163 INFO o.a.j.r.Summariser: summary =   8588 in 00:08:30 =   16.8/s Avg:    28 Min:    10 Max:  1053 Err:     0 (0.00%)
+2026-04-09 19:01:00,009 INFO o.a.j.r.Summariser: summary +    473 in 00:00:30 =   15.8/s Avg:    33 Min:    13 Max:  1908 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:01:00,010 INFO o.a.j.r.Summariser: summary =   9061 in 00:09:00 =   16.8/s Avg:    28 Min:    10 Max:  1908 Err:     0 (0.00%)
+2026-04-09 19:01:30,047 INFO o.a.j.r.Summariser: summary +    495 in 00:00:30 =   16.5/s Avg:    25 Min:    12 Max:   295 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:01:30,048 INFO o.a.j.r.Summariser: summary =   9556 in 00:09:30 =   16.8/s Avg:    28 Min:    10 Max:  1908 Err:     0 (0.00%)
+2026-04-09 19:02:00,146 INFO o.a.j.r.Summariser: summary +    476 in 00:00:30 =   15.8/s Avg:    26 Min:    11 Max:   270 Err:     3 (0.63%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:02:00,146 INFO o.a.j.r.Summariser: summary =  10032 in 00:10:00 =   16.7/s Avg:    28 Min:    10 Max:  1908 Err:     3 (0.03%)
+2026-04-09 19:02:30,063 INFO o.a.j.r.Summariser: summary +    497 in 00:00:30 =   16.6/s Avg:    28 Min:    13 Max:   309 Err:     1 (0.20%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:02:30,085 INFO o.a.j.r.Summariser: summary =  10529 in 00:10:30 =   16.7/s Avg:    28 Min:    10 Max:  1908 Err:     4 (0.04%)
+2026-04-09 19:03:00,020 INFO o.a.j.r.Summariser: summary +    511 in 00:00:30 =   17.1/s Avg:    27 Min:    12 Max:   561 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:03:00,020 INFO o.a.j.r.Summariser: summary =  11040 in 00:11:00 =   16.7/s Avg:    28 Min:    10 Max:  1908 Err:     4 (0.04%)
+2026-04-09 19:03:30,023 INFO o.a.j.r.Summariser: summary +    486 in 00:00:30 =   16.2/s Avg:    41 Min:    13 Max:  2147 Err:     5 (1.03%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:03:30,023 INFO o.a.j.r.Summariser: summary =  11526 in 00:11:30 =   16.7/s Avg:    28 Min:    10 Max:  2147 Err:     9 (0.08%)
+2026-04-09 19:04:00,109 INFO o.a.j.r.Summariser: summary +    483 in 00:00:30 =   16.1/s Avg:    27 Min:    12 Max:   282 Err:     8 (1.66%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:04:00,109 INFO o.a.j.r.Summariser: summary =  12009 in 00:12:00 =   16.7/s Avg:    28 Min:    10 Max:  2147 Err:    17 (0.14%)
+2026-04-09 19:04:30,028 INFO o.a.j.r.Summariser: summary +    536 in 00:00:30 =   17.9/s Avg:    28 Min:    10 Max:   250 Err:    10 (1.87%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:04:30,029 INFO o.a.j.r.Summariser: summary =  12545 in 00:12:30 =   16.7/s Avg:    28 Min:    10 Max:  2147 Err:    27 (0.22%)
+2026-04-09 19:05:00,017 INFO o.a.j.r.Summariser: summary +    517 in 00:00:30 =   17.2/s Avg:    30 Min:    11 Max:  1183 Err:    19 (3.68%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:05:00,021 INFO o.a.j.r.Summariser: summary =  13062 in 00:13:00 =   16.8/s Avg:    28 Min:    10 Max:  2147 Err:    46 (0.35%)
+2026-04-09 19:05:30,002 INFO o.a.j.r.Summariser: summary +    490 in 00:00:30 =   16.3/s Avg:    26 Min:    12 Max:   323 Err:    28 (5.71%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:05:30,003 INFO o.a.j.r.Summariser: summary =  13552 in 00:13:30 =   16.7/s Avg:    28 Min:    10 Max:  2147 Err:    74 (0.55%)
+2026-04-09 19:06:00,065 INFO o.a.j.r.Summariser: summary +    519 in 00:00:30 =   17.3/s Avg:    32 Min:    11 Max:  1077 Err:    44 (8.48%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:06:00,066 INFO o.a.j.r.Summariser: summary =  14071 in 00:14:00 =   16.8/s Avg:    28 Min:    10 Max:  2147 Err:   118 (0.84%)
+2026-04-09 19:06:30,349 INFO o.a.j.r.Summariser: summary +    509 in 00:00:30 =   16.8/s Avg:    26 Min:    10 Max:   570 Err:    67 (13.16%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:06:30,349 INFO o.a.j.r.Summariser: summary =  14580 in 00:14:30 =   16.8/s Avg:    28 Min:    10 Max:  2147 Err:   185 (1.27%)
+2026-04-09 19:07:00,236 INFO o.a.j.r.Summariser: summary +    529 in 00:00:30 =   17.7/s Avg:    25 Min:    10 Max:   248 Err:    15 (2.84%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:07:00,238 INFO o.a.j.r.Summariser: summary =  15109 in 00:15:00 =   16.8/s Avg:    28 Min:    10 Max:  2147 Err:   200 (1.32%)
+2026-04-09 19:07:30,004 INFO o.a.j.r.Summariser: summary +    471 in 00:00:30 =   15.8/s Avg:    30 Min:    10 Max:   345 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:07:30,007 INFO o.a.j.r.Summariser: summary =  15580 in 00:15:30 =   16.8/s Avg:    28 Min:    10 Max:  2147 Err:   200 (1.28%)
+2026-04-09 19:08:00,007 INFO o.a.j.r.Summariser: summary +    471 in 00:00:30 =   15.7/s Avg:    29 Min:    10 Max:   638 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:08:00,008 INFO o.a.j.r.Summariser: summary =  16051 in 00:16:00 =   16.7/s Avg:    28 Min:    10 Max:  2147 Err:   200 (1.25%)
+2026-04-09 19:08:30,135 INFO o.a.j.r.Summariser: summary +    486 in 00:00:30 =   16.1/s Avg:    28 Min:    10 Max:   575 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:08:30,135 INFO o.a.j.r.Summariser: summary =  16537 in 00:16:30 =   16.7/s Avg:    28 Min:    10 Max:  2147 Err:   200 (1.21%)
+2026-04-09 19:09:00,066 INFO o.a.j.r.Summariser: summary +    502 in 00:00:30 =   16.8/s Avg:    30 Min:    11 Max:   566 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:09:00,067 INFO o.a.j.r.Summariser: summary =  17039 in 00:17:00 =   16.7/s Avg:    28 Min:    10 Max:  2147 Err:   200 (1.17%)
+2026-04-09 19:09:30,196 INFO o.a.j.r.Summariser: summary +    491 in 00:00:30 =   16.3/s Avg:    29 Min:    10 Max:   300 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:09:30,197 INFO o.a.j.r.Summariser: summary =  17530 in 00:17:30 =   16.7/s Avg:    28 Min:    10 Max:  2147 Err:   200 (1.14%)
+2026-04-09 19:10:00,037 INFO o.a.j.r.Summariser: summary +    498 in 00:00:30 =   16.7/s Avg:    31 Min:     9 Max:   313 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:10:00,038 INFO o.a.j.r.Summariser: summary =  18028 in 00:18:00 =   16.7/s Avg:    28 Min:     9 Max:  2147 Err:   200 (1.11%)
+2026-04-09 19:10:30,002 INFO o.a.j.r.Summariser: summary +    476 in 00:00:30 =   15.9/s Avg:    29 Min:    11 Max:   560 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:10:30,007 INFO o.a.j.r.Summariser: summary =  18504 in 00:18:30 =   16.7/s Avg:    28 Min:     9 Max:  2147 Err:   200 (1.08%)
+2026-04-09 19:11:00,012 INFO o.a.j.r.Summariser: summary +    520 in 00:00:30 =   17.3/s Avg:    23 Min:    10 Max:   555 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:11:00,012 INFO o.a.j.r.Summariser: summary =  19024 in 00:19:00 =   16.7/s Avg:    28 Min:     9 Max:  2147 Err:   200 (1.05%)
+2026-04-09 19:11:30,022 INFO o.a.j.r.Summariser: summary +    460 in 00:00:30 =   15.3/s Avg:    30 Min:    11 Max:  1304 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2026-04-09 19:11:30,023 INFO o.a.j.r.Summariser: summary =  19484 in 00:19:30 =   16.7/s Avg:    28 Min:     9 Max:  2147 Err:   200 (1.03%)
+2026-04-09 19:11:54,878 INFO o.a.j.t.p.ConstantPoissonProcessGenerator: Generated 20000 timings (Precise Throughput Timer 20000 required, rate 16.666666666666668, duration 1200) in 4 ms. First 15 events will be fired at: 1200.0728716765568 (+1200.0728716765568), 1200.0834919243503 (+0.010620247793440285), 1200.0937169957665 (+0.010225071416243736), 1200.153357831244 (+0.05964083547746668), 1200.2747451584503 (+0.12138732720632106), 1200.6090833972871 (+0.33433823883683544), 1200.6559027706014 (+0.046819373314292534), 1200.7544106344506 (+0.0985078638491359), 1200.7623316887518 (+0.007921054301277763), 1200.8782476362676 (+0.1159159475157594), 1200.8955476500328 (+0.017300013765179756), 1200.9521795339297 (+0.056631883896898216), 1201.1487834826692 (+0.19660394873949372), 1201.2898677852063 (+0.14108430253713777), 1201.2938992310405 (+0.004031445834243641)
+2026-04-09 19:11:55,110 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5909 ms and the throughput timer generates a delay of 5938. Terminating the thread manually.
+2026-04-09 19:11:55,110 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-64
+2026-04-09 19:11:55,110 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-64
+2026-04-09 19:11:55,120 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5848 ms and the throughput timer generates a delay of 5936. Terminating the thread manually.
+2026-04-09 19:11:55,120 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-54
+2026-04-09 19:11:55,120 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-54
+2026-04-09 19:11:55,260 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5435 ms and the throughput timer generates a delay of 5929. Terminating the thread manually.
+2026-04-09 19:11:55,260 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-19
+2026-04-09 19:11:55,261 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-19
+2026-04-09 19:11:55,264 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5881 ms and the throughput timer generates a delay of 5982. Terminating the thread manually.
+2026-04-09 19:11:55,264 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-91
+2026-04-09 19:11:55,264 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-91
+2026-04-09 19:11:55,307 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5343 ms and the throughput timer generates a delay of 6135. Terminating the thread manually.
+2026-04-09 19:11:55,308 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-14
+2026-04-09 19:11:55,308 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-14
+2026-04-09 19:11:55,349 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5482 ms and the throughput timer generates a delay of 6234. Terminating the thread manually.
+2026-04-09 19:11:55,349 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-40
+2026-04-09 19:11:55,349 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-40
+2026-04-09 19:11:55,431 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5144 ms and the throughput timer generates a delay of 6156. Terminating the thread manually.
+2026-04-09 19:11:55,431 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-6
+2026-04-09 19:11:55,431 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-6
+2026-04-09 19:11:55,455 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5265 ms and the throughput timer generates a delay of 6179. Terminating the thread manually.
+2026-04-09 19:11:55,455 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-23
+2026-04-09 19:11:55,455 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-23
+2026-04-09 19:11:55,458 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5692 ms and the throughput timer generates a delay of 6214. Terminating the thread manually.
+2026-04-09 19:11:55,458 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-92
+2026-04-09 19:11:55,458 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-92
+2026-04-09 19:11:55,477 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5707 ms and the throughput timer generates a delay of 6283. Terminating the thread manually.
+2026-04-09 19:11:55,477 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-100
+2026-04-09 19:11:55,477 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-100
+2026-04-09 19:11:55,582 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5327 ms and the throughput timer generates a delay of 6262. Terminating the thread manually.
+2026-04-09 19:11:55,582 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-50
+2026-04-09 19:11:55,582 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-50
+2026-04-09 19:11:55,609 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5496 ms and the throughput timer generates a delay of 6313. Terminating the thread manually.
+2026-04-09 19:11:55,609 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5382 ms and the throughput timer generates a delay of 6360. Terminating the thread manually.
+2026-04-09 19:11:55,609 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-83
+2026-04-09 19:11:55,609 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-59
+2026-04-09 19:11:55,609 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-59
+2026-04-09 19:11:55,609 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-83
+2026-04-09 19:11:55,624 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5167 ms and the throughput timer generates a delay of 6401. Terminating the thread manually.
+2026-04-09 19:11:55,624 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-35
+2026-04-09 19:11:55,624 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-35
+2026-04-09 19:11:55,629 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5443 ms and the throughput timer generates a delay of 6507. Terminating the thread manually.
+2026-04-09 19:11:55,629 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-76
+2026-04-09 19:11:55,629 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-76
+2026-04-09 19:11:55,633 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5235 ms and the throughput timer generates a delay of 6680. Terminating the thread manually.
+2026-04-09 19:11:55,633 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-45
+2026-04-09 19:11:55,633 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-45
+2026-04-09 19:11:55,641 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5069 ms and the throughput timer generates a delay of 6732. Terminating the thread manually.
+2026-04-09 19:11:55,641 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-21
+2026-04-09 19:11:55,641 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-21
+2026-04-09 19:11:55,652 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5325 ms and the throughput timer generates a delay of 6839. Terminating the thread manually.
+2026-04-09 19:11:55,652 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-56
+2026-04-09 19:11:55,652 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-56
+2026-04-09 19:11:55,664 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5116 ms and the throughput timer generates a delay of 6859. Terminating the thread manually.
+2026-04-09 19:11:55,664 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5388 ms and the throughput timer generates a delay of 6835. Terminating the thread manually.
+2026-04-09 19:11:55,664 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-33
+2026-04-09 19:11:55,664 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5490 ms and the throughput timer generates a delay of 6978. Terminating the thread manually.
+2026-04-09 19:11:55,664 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-71
+2026-04-09 19:11:55,664 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-33
+2026-04-09 19:11:55,664 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-93
+2026-04-09 19:11:55,664 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-93
+2026-04-09 19:11:55,667 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-71
+2026-04-09 19:11:55,702 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 4984 ms and the throughput timer generates a delay of 6948. Terminating the thread manually.
+2026-04-09 19:11:55,702 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-18
+2026-04-09 19:11:55,702 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-18
+2026-04-09 19:11:55,732 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5428 ms and the throughput timer generates a delay of 6997. Terminating the thread manually.
+2026-04-09 19:11:55,732 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-94
+2026-04-09 19:11:55,732 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-94
+2026-04-09 19:11:55,890 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 4955 ms and the throughput timer generates a delay of 6884. Terminating the thread manually.
+2026-04-09 19:11:55,890 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-42
+2026-04-09 19:11:55,890 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-42
+2026-04-09 19:11:56,070 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 4675 ms and the throughput timer generates a delay of 6728. Terminating the thread manually.
+2026-04-09 19:11:56,070 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-26
+2026-04-09 19:11:56,070 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-26
+2026-04-09 19:11:56,082 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 5019 ms and the throughput timer generates a delay of 6780. Terminating the thread manually.
+2026-04-09 19:11:56,082 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-82
+2026-04-09 19:11:56,082 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-82
+2026-04-09 19:11:56,163 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 4351 ms and the throughput timer generates a delay of 6745. Terminating the thread manually.
+2026-04-09 19:11:56,163 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-1
+2026-04-09 19:11:56,163 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-1
+2026-04-09 19:11:56,240 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 4518 ms and the throughput timer generates a delay of 6670. Terminating the thread manually.
+2026-04-09 19:11:56,240 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-29
+2026-04-09 19:11:56,240 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-29
+2026-04-09 19:11:56,274 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 4698 ms and the throughput timer generates a delay of 6733. Terminating the thread manually.
+2026-04-09 19:11:56,274 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-55
+2026-04-09 19:11:56,274 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-55
+2026-04-09 19:11:56,279 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 4717 ms and the throughput timer generates a delay of 6754. Terminating the thread manually.
+2026-04-09 19:11:56,279 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-60
+2026-04-09 19:11:56,279 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-60
+2026-04-09 19:11:56,316 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 4708 ms and the throughput timer generates a delay of 6874. Terminating the thread manually.
+2026-04-09 19:11:56,316 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-65
+2026-04-09 19:11:56,316 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-65
+2026-04-09 19:11:56,384 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 4693 ms and the throughput timer generates a delay of 6850. Terminating the thread manually.
+2026-04-09 19:11:56,384 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-77
+2026-04-09 19:11:56,384 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-77
+2026-04-09 19:11:56,397 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 4367 ms and the throughput timer generates a delay of 6881. Terminating the thread manually.
+2026-04-09 19:11:56,397 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-30
+2026-04-09 19:11:56,397 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-30
+2026-04-09 19:11:56,449 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 4114 ms and the throughput timer generates a delay of 6873. Terminating the thread manually.
+2026-04-09 19:11:56,449 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-5
+2026-04-09 19:11:56,449 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-5
+2026-04-09 19:11:56,478 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 4551 ms and the throughput timer generates a delay of 6884. Terminating the thread manually.
+2026-04-09 19:11:56,478 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-66
+2026-04-09 19:11:56,478 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-66
+2026-04-09 19:11:56,490 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 4597 ms and the throughput timer generates a delay of 6893. Terminating the thread manually.
+2026-04-09 19:11:56,490 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-79
+2026-04-09 19:11:56,490 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-79
+2026-04-09 19:11:56,534 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 4547 ms and the throughput timer generates a delay of 6887. Terminating the thread manually.
+2026-04-09 19:11:56,535 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-78
+2026-04-09 19:11:56,535 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-78
+2026-04-09 19:11:56,690 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 4025 ms and the throughput timer generates a delay of 6754. Terminating the thread manually.
+2026-04-09 19:11:56,690 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-22
+2026-04-09 19:11:56,690 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-22
+2026-04-09 19:11:56,726 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 4440 ms and the throughput timer generates a delay of 6821. Terminating the thread manually.
+2026-04-09 19:11:56,726 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-95
+2026-04-09 19:11:56,726 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-95
+2026-04-09 19:11:56,728 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 4073 ms and the throughput timer generates a delay of 6851. Terminating the thread manually.
+2026-04-09 19:11:56,728 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-36
+2026-04-09 19:11:56,728 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-36
+2026-04-09 19:11:56,805 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 3749 ms and the throughput timer generates a delay of 6813. Terminating the thread manually.
+2026-04-09 19:11:56,805 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-4
+2026-04-09 19:11:56,805 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-4
+2026-04-09 19:11:56,839 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 4034 ms and the throughput timer generates a delay of 6791. Terminating the thread manually.
+2026-04-09 19:11:56,839 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-46
+2026-04-09 19:11:56,839 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-46
+2026-04-09 19:11:56,918 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 3667 ms and the throughput timer generates a delay of 6713. Terminating the thread manually.
+2026-04-09 19:11:56,918 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-7
+2026-04-09 19:11:56,918 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-7
+2026-04-09 19:11:56,982 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 3934 ms and the throughput timer generates a delay of 6719. Terminating the thread manually.
+2026-04-09 19:11:56,982 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-51
+2026-04-09 19:11:56,982 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-51
+2026-04-09 19:11:57,067 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 3989 ms and the throughput timer generates a delay of 6671. Terminating the thread manually.
+2026-04-09 19:11:57,067 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-72
+2026-04-09 19:11:57,070 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-72
+2026-04-09 19:11:57,145 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 3516 ms and the throughput timer generates a delay of 6737. Terminating the thread manually.
+2026-04-09 19:11:57,145 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-15
+2026-04-09 19:11:57,145 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-15
+2026-04-09 19:11:57,153 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 3575 ms and the throughput timer generates a delay of 6813. Terminating the thread manually.
+2026-04-09 19:11:57,154 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-24
+2026-04-09 19:11:57,154 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-24
+2026-04-09 19:11:57,204 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 3799 ms and the throughput timer generates a delay of 6877. Terminating the thread manually.
+2026-04-09 19:11:57,204 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-61
+2026-04-09 19:11:57,204 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-61
+2026-04-09 19:11:57,217 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 3764 ms and the throughput timer generates a delay of 6905. Terminating the thread manually.
+2026-04-09 19:11:57,217 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-57
+2026-04-09 19:11:57,217 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-57
+2026-04-09 19:11:57,403 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 3346 ms and the throughput timer generates a delay of 6789. Terminating the thread manually.
+2026-04-09 19:11:57,403 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-27
+2026-04-09 19:11:57,403 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-27
+2026-04-09 19:11:57,528 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 3310 ms and the throughput timer generates a delay of 6786. Terminating the thread manually.
+2026-04-09 19:11:57,528 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-41
+2026-04-09 19:11:57,528 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-41
+2026-04-09 19:11:57,563 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 3609 ms and the throughput timer generates a delay of 6780. Terminating the thread manually.
+2026-04-09 19:11:57,563 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-97
+2026-04-09 19:11:57,563 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-97
+2026-04-09 19:11:57,632 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 3069 ms and the throughput timer generates a delay of 6723. Terminating the thread manually.
+2026-04-09 19:11:57,632 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-20
+2026-04-09 19:11:57,632 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-20
+2026-04-09 19:11:57,666 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 2946 ms and the throughput timer generates a delay of 6737. Terminating the thread manually.
+2026-04-09 19:11:57,666 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-10
+2026-04-09 19:11:57,666 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-10
+2026-04-09 19:11:57,670 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 3100 ms and the throughput timer generates a delay of 6883. Terminating the thread manually.
+2026-04-09 19:11:57,670 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-31
+2026-04-09 19:11:57,670 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-31
+2026-04-09 19:11:57,879 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 2944 ms and the throughput timer generates a delay of 6713. Terminating the thread manually.
+2026-04-09 19:11:57,879 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-39
+2026-04-09 19:11:57,879 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-39
+2026-04-09 19:11:58,072 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 2456 ms and the throughput timer generates a delay of 6572. Terminating the thread manually.
+2026-04-09 19:11:58,072 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-2
+2026-04-09 19:11:58,072 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-2
+2026-04-09 19:11:58,087 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 2949 ms and the throughput timer generates a delay of 6576. Terminating the thread manually.
+2026-04-09 19:11:58,087 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-68
+2026-04-09 19:11:58,087 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-68
+2026-04-09 19:11:58,100 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 3068 ms and the throughput timer generates a delay of 6649. Terminating the thread manually.
+2026-04-09 19:11:58,100 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-96
+2026-04-09 19:11:58,100 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-96
+2026-04-09 19:11:58,323 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 2487 ms and the throughput timer generates a delay of 6508. Terminating the thread manually.
+2026-04-09 19:11:58,323 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-37
+2026-04-09 19:11:58,323 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-37
+2026-04-09 19:11:58,393 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 2640 ms and the throughput timer generates a delay of 6443. Terminating the thread manually.
+2026-04-09 19:11:58,393 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-67
+2026-04-09 19:11:58,393 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-67
+2026-04-09 19:11:58,404 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 2476 ms and the throughput timer generates a delay of 6457. Terminating the thread manually.
+2026-04-09 19:11:58,404 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-47
+2026-04-09 19:11:58,404 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-47
+2026-04-09 19:11:58,527 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 2068 ms and the throughput timer generates a delay of 6555. Terminating the thread manually.
+2026-04-09 19:11:58,527 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-8
+2026-04-09 19:11:58,527 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-8
+2026-04-09 19:11:58,559 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 2550 ms and the throughput timer generates a delay of 6534. Terminating the thread manually.
+2026-04-09 19:11:58,559 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-84
+2026-04-09 19:11:58,559 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-84
+2026-04-09 19:11:58,865 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 1989 ms and the throughput timer generates a delay of 6271. Terminating the thread manually.
+2026-04-09 19:11:58,865 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-43
+2026-04-09 19:11:58,865 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-43
+2026-04-09 19:11:58,876 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 1909 ms and the throughput timer generates a delay of 6268. Terminating the thread manually.
+2026-04-09 19:11:58,877 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-34
+2026-04-09 19:11:58,877 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-34
+2026-04-09 19:11:58,891 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 2222 ms and the throughput timer generates a delay of 6258. Terminating the thread manually.
+2026-04-09 19:11:58,891 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-85
+2026-04-09 19:11:58,891 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-85
+2026-04-09 19:11:59,021 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 1519 ms and the throughput timer generates a delay of 6224. Terminating the thread manually.
+2026-04-09 19:11:59,021 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-3
+2026-04-09 19:11:59,021 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-3
+2026-04-09 19:11:59,043 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 1920 ms and the throughput timer generates a delay of 6234. Terminating the thread manually.
+2026-04-09 19:11:59,043 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-53
+2026-04-09 19:11:59,043 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-53
+2026-04-09 19:11:59,090 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 1917 ms and the throughput timer generates a delay of 6305. Terminating the thread manually.
+2026-04-09 19:11:59,090 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-62
+2026-04-09 19:11:59,090 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-62
+2026-04-09 19:11:59,201 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 1916 ms and the throughput timer generates a delay of 6198. Terminating the thread manually.
+2026-04-09 19:11:59,201 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-86
+2026-04-09 19:11:59,201 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-86
+2026-04-09 19:11:59,228 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 1950 ms and the throughput timer generates a delay of 6189. Terminating the thread manually.
+2026-04-09 19:11:59,228 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-98
+2026-04-09 19:11:59,228 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-98
+2026-04-09 19:11:59,247 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 1876 ms and the throughput timer generates a delay of 6273. Terminating the thread manually.
+2026-04-09 19:11:59,247 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-87
+2026-04-09 19:11:59,247 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-87
+2026-04-09 19:11:59,342 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 1393 ms and the throughput timer generates a delay of 6187. Terminating the thread manually.
+2026-04-09 19:11:59,342 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-25
+2026-04-09 19:11:59,342 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-25
+2026-04-09 19:11:59,402 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 1583 ms and the throughput timer generates a delay of 6206. Terminating the thread manually.
+2026-04-09 19:11:59,402 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-58
+2026-04-09 19:11:59,402 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-58
+2026-04-09 19:11:59,494 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 1426 ms and the throughput timer generates a delay of 6130. Terminating the thread manually.
+2026-04-09 19:11:59,494 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-52
+2026-04-09 19:11:59,494 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-52
+2026-04-09 19:11:59,502 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 1589 ms and the throughput timer generates a delay of 6127. Terminating the thread manually.
+2026-04-09 19:11:59,502 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-80
+2026-04-09 19:11:59,502 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-80
+2026-04-09 19:11:59,633 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 1411 ms and the throughput timer generates a delay of 6008. Terminating the thread manually.
+2026-04-09 19:11:59,633 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-69
+2026-04-09 19:11:59,633 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-69
+2026-04-09 19:11:59,645 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 1415 ms and the throughput timer generates a delay of 6045. Terminating the thread manually.
+2026-04-09 19:11:59,645 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-73
+2026-04-09 19:11:59,647 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-73
+2026-04-09 19:11:59,651 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 1480 ms and the throughput timer generates a delay of 6078. Terminating the thread manually.
+2026-04-09 19:11:59,651 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-89
+2026-04-09 19:11:59,651 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-89
+2026-04-09 19:11:59,657 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 1481 ms and the throughput timer generates a delay of 6120. Terminating the thread manually.
+2026-04-09 19:11:59,657 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-90
+2026-04-09 19:11:59,657 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-90
+2026-04-09 19:11:59,658 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 1470 ms and the throughput timer generates a delay of 6123. Terminating the thread manually.
+2026-04-09 19:11:59,658 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-88
+2026-04-09 19:11:59,658 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-88
+2026-04-09 19:11:59,704 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 1360 ms and the throughput timer generates a delay of 6115. Terminating the thread manually.
+2026-04-09 19:11:59,704 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-74
+2026-04-09 19:11:59,705 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-74
+2026-04-09 19:11:59,735 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 1080 ms and the throughput timer generates a delay of 6112. Terminating the thread manually.
+2026-04-09 19:11:59,735 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-38
+2026-04-09 19:11:59,735 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-38
+2026-04-09 19:11:59,808 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 832 ms and the throughput timer generates a delay of 6131. Terminating the thread manually.
+2026-04-09 19:11:59,808 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-13
+2026-04-09 19:11:59,808 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-13
+2026-04-09 19:11:59,871 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 750 ms and the throughput timer generates a delay of 6110. Terminating the thread manually.
+2026-04-09 19:11:59,872 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-11
+2026-04-09 19:11:59,872 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-11
+2026-04-09 19:12:00,028 INFO o.a.j.r.Summariser: summary +    511 in 00:00:30 =   17.0/s Avg:    24 Min:    11 Max:   274 Err:     0 (0.00%) Active: 14 Started: 100 Finished: 86
+2026-04-09 19:12:00,029 INFO o.a.j.r.Summariser: summary =  19995 in 00:20:00 =   16.7/s Avg:    28 Min:     9 Max:  2147 Err:   200 (1.00%)
+2026-04-09 19:12:00,029 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 862 ms and the throughput timer generates a delay of 6032. Terminating the thread manually.
+2026-04-09 19:12:00,029 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-49
+2026-04-09 19:12:00,029 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-49
+2026-04-09 19:12:00,109 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 643 ms and the throughput timer generates a delay of 5975. Terminating the thread manually.
+2026-04-09 19:12:00,110 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-28
+2026-04-09 19:12:00,110 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-28
+2026-04-09 19:12:00,227 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 403 ms and the throughput timer generates a delay of 5891. Terminating the thread manually.
+2026-04-09 19:12:00,228 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-12
+2026-04-09 19:12:00,228 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-12
+2026-04-09 19:12:00,248 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 423 ms and the throughput timer generates a delay of 5975. Terminating the thread manually.
+2026-04-09 19:12:00,248 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-16
+2026-04-09 19:12:00,248 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-16
+2026-04-09 19:12:00,249 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 798 ms and the throughput timer generates a delay of 5998. Terminating the thread manually.
+2026-04-09 19:12:00,249 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-70
+2026-04-09 19:12:00,249 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-70
+2026-04-09 19:12:00,279 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 498 ms and the throughput timer generates a delay of 6053. Terminating the thread manually.
+2026-04-09 19:12:00,279 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-32
+2026-04-09 19:12:00,279 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-32
+2026-04-09 19:12:00,391 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 705 ms and the throughput timer generates a delay of 5962. Terminating the thread manually.
+2026-04-09 19:12:00,391 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-81
+2026-04-09 19:12:00,391 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-81
+2026-04-09 19:12:00,403 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 458 ms and the throughput timer generates a delay of 5959. Terminating the thread manually.
+2026-04-09 19:12:00,403 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-44
+2026-04-09 19:12:00,403 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-44
+2026-04-09 19:12:00,405 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 479 ms and the throughput timer generates a delay of 5965. Terminating the thread manually.
+2026-04-09 19:12:00,405 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-48
+2026-04-09 19:12:00,405 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-48
+2026-04-09 19:12:00,496 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 182 ms and the throughput timer generates a delay of 5886. Terminating the thread manually.
+2026-04-09 19:12:00,496 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-17
+2026-04-09 19:12:00,496 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-17
+2026-04-09 19:12:00,629 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: WETPAINT Group 1-9
+2026-04-09 19:12:00,629 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-9
+2026-04-09 19:12:00,931 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 82 ms and the throughput timer generates a delay of 5483. Terminating the thread manually.
+2026-04-09 19:12:00,931 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-63
+2026-04-09 19:12:00,931 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-63
+2026-04-09 19:12:00,972 INFO o.a.j.t.JMeterThread: Stopping Thread: org.apache.jorphan.util.JMeterStopThreadException: The thread is scheduled to stop in 96 ms and the throughput timer generates a delay of 5649. Terminating the thread manually.
+2026-04-09 19:12:00,972 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: WETPAINT Group 1-75
+2026-04-09 19:12:00,976 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-75
+2026-04-09 19:12:01,189 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: WETPAINT Group 1-99
+2026-04-09 19:12:01,191 INFO o.a.j.t.JMeterThread: Thread finished: WETPAINT Group 1-99
+2026-04-09 19:12:01,192 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-04-09 19:12:01,192 INFO o.a.j.s.FileServer: Close: C:\Users\suppo\Desktop\國衛院-兒童web\stress\users.csv
+2026-04-09 19:12:01,193 INFO o.a.j.r.Summariser: summary +     13 in 00:00:01 =   11.2/s Avg:    24 Min:    16 Max:    60 Err:     0 (0.00%) Active: 0 Started: 100 Finished: 100
+2026-04-09 19:12:01,193 INFO o.a.j.r.Summariser: summary =  20008 in 00:20:01 =   16.7/s Avg:    28 Min:     9 Max:  2147 Err:   200 (1.00%)
+2026-04-09 19:12:01,194 INFO o.a.j.JMeter: Generating Dashboard
+2026-04-09 19:12:01,194 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2026-04-09 19:12:01,208 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2026-04-09 19:12:01,854 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2026-04-09 19:12:01,854 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2026-04-09 19:12:01,857 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2026-04-09 19:12:01,857 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2026-04-09 19:12:01,878 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2026-04-09 19:12:01,882 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2026-04-09 19:12:01,882 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2026-04-09 19:12:01,882 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2026-04-09 19:12:02,035 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2026-04-09 19:12:02,037 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2026-04-09 19:12:02,037 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2026-04-09 19:12:02,037 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2026-04-09 19:12:02,158 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2026-04-09 19:12:02,158 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 140056 samples
+2026-04-09 19:12:02,158 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2026-04-09 19:12:02,159 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2026-04-09 19:12:02,159 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2026-04-09 19:12:02,168 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2026-04-09 19:12:02,170 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2026-04-09 19:12:02,174 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2026-04-09 19:12:02,197 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2026-04-09 19:12:02,198 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2026-04-09 19:12:02,200 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2026-04-09 19:12:02,202 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2026-04-09 19:12:02,203 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 311715 samples
+2026-04-09 19:12:02,203 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 62343 samples
+2026-04-09 19:12:02,203 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 20781 samples
+2026-04-09 19:12:02,204 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 20781 samples produced in 968ms on channel 0
+2026-04-09 19:12:02,204 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2026-04-09 19:12:02,290 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2026-04-09 19:12:02,290 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2026-04-09 19:12:02,291 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2026-04-09 19:12:02,293 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2026-04-09 19:12:02,298 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to C:\Users\suppo\Desktop\國衛院-兒童web\stress\results\pressure_100u_20m_v5\html-report\statistics.json
+2026-04-09 19:12:02,372 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2026-04-09 19:12:02,375 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: C:\Users\suppo\Desktop\國衛院-兒童web\stress\results\pressure_100u_20m_v5\html-report
+2026-04-09 19:12:02,714 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: C:\Users\suppo\Desktop\國衛院-兒童web\stress\results\pressure_100u_20m_v5\html-report, creating folder structure
+2026-04-09 19:12:02,718 INFO o.a.j.r.d.TemplateVisitor: Copying folder from 'C:\Users\suppo\Desktop\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\report-template' to 'C:\Users\suppo\Desktop\國衛院-兒童web\stress\results\pressure_100u_20m_v5\html-report', got message: C:\Users\suppo\Desktop\國衛院-兒童web\stress\results\pressure_100u_20m_v5\html-report, found non empty folder with following content [C:\Users\suppo\Desktop\國衛院-兒童web\stress\results\pressure_100u_20m_v5\html-report\statistics.json], will be ignored
+2026-04-09 19:12:03,218 INFO o.a.j.JMeter: Dashboard generated
