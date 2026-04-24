@@ -109,3 +109,83 @@
 - 要改流程，改 `Test Plan_0408_light.jmx`
 - 不要改 `generated-test-plan.jmx`
 - `Transaction Controller` 失敗，通常要往下看是哪支 API 真正失敗
+## 8. 監控工具安裝與使用（精簡版）
+
+### 8.1 已安裝內容
+
+- `JMeter Plugins Manager`
+- `PerfMon Metrics Collector`
+- `ServerAgent`
+
+### 8.2 檔案位置
+
+- JMeter：
+  `C:\Users\suppo\Desktop\apache-jmeter-5.6.3\apache-jmeter-5.6.3`
+- ServerAgent：
+  `C:\Users\suppo\Desktop\國衛院-兒童web\stress\tools\ServerAgent-2.2.3\ServerAgent-2.2.3`
+- 啟動腳本：
+  `.\start-server-agent.ps1`
+
+### 8.3 啟動監控 Agent
+
+在專案目錄執行：
+
+```powershell
+.\start-server-agent.ps1
+```
+
+若要先查看可監控的網卡、磁碟、Process：
+
+```powershell
+.\start-server-agent.ps1 -SysInfo
+```
+
+預設連線埠：
+
+- TCP `4444`
+- UDP `4444`
+
+### 8.4 JMeter 內如何操作
+
+1. 開啟 JMeter。
+2. 在 Test Plan 或 Thread Group 下新增：
+   `Listener -> jp@gc - PerfMon Metrics Collector`
+3. 新增監控主機：
+   - Host：`127.0.0.1`
+   - Port：`4444`
+4. 建議先加入以下指標：
+   - `CPU`
+   - `Memory`
+   - `Network I/O`
+5. 先啟動 `ServerAgent`，再開始跑 JMeter。
+
+### 8.5 重新產生 HTTPS Recorder 憑證
+
+本次已重新產生以下檔案：
+
+- `proxyserver.jks`
+- `ApacheJMeterTemporaryRootCA.crt`
+- `ApacheJMeterTemporaryRootCA.usr`
+
+位置都在：
+
+`C:\Users\suppo\Desktop\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin`
+
+舊憑證備份檔：
+
+- `proxyserver.jks.bak_20260423_180402`
+
+### 8.6 錄製 HTTPS 封包時怎麼做
+
+1. 先確認 JMeter 已關閉再重新開啟。
+2. 到 JMeter `bin` 目錄找到：
+   `ApacheJMeterTemporaryRootCA.crt`
+3. 將這個憑證匯入瀏覽器或 Windows 信任憑證存放區。
+4. 若瀏覽器裡仍有舊的 JMeter 過期憑證，先刪除。
+5. 再開啟 `HTTP(S) Test Script Recorder` 進行錄製。
+
+### 8.7 注意事項
+
+- `PerfMon` 只能看到有啟動 `ServerAgent` 的主機資源。
+- 若要監控遠端主機，需在遠端主機也啟動 `ServerAgent`，並開放對應 Port。
+- 若只看 JMeter HTML Report，無法直接得出 CPU / 記憶體使用率，仍需搭配 `PerfMon`。
