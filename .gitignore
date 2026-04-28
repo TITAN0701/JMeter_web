@@ -1,0 +1,27 @@
+# JMeter generated results
+reports/results_*.jtl
+reports/html_*/
+logs/*.log
+jmeter.log
+
+# Raw recorder captures may contain browser tokens or personal telemetry.
+recordings/
+
+# Java build output
+tools/java/out/
+target/
+
+# IDE and language-server cache
+.metals/
+.bloop/
+.bsp/
+.classpath
+.project
+.settings/
+
+# Local plugin/source experiments
+performance/
+
+# OS files
+Thumbs.db
+desktop.ini

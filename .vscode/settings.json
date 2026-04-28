@@ -1,0 +1,10 @@
+{
+    "files.watcherExclude": {
+        "**/target": true
+    },
+    "java.project.referencedLibraries": [
+        "C:\\\\Users\\\\suppo\\\\Desktop\\\\apache-jmeter-5.6.3\\\\apache-jmeter-5.6.3\\\\lib\\\\*",
+        "C:\\\\Users\\\\suppo\\\\Desktop\\\\apache-jmeter-5.6.3\\\\apache-jmeter-5.6.3\\\\lib\\\\ext\\\\*"
+    ],
+    "java.compile.nullAnalysis.mode": "disabled"
+}
