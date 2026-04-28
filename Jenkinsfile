@@ -13,6 +13,7 @@ pipeline {
         string(name: 'NUM_THREADS', defaultValue: '5', description: 'Thread count override')
         string(name: 'LOOP_COUNT', defaultValue: '3', description: 'Loop count override')
         string(name: 'RAMP_UP', defaultValue: '10', description: 'Ramp-up seconds override')
+        string(name: 'DURATION_SECONDS', defaultValue: '-1', description: 'Duration override in seconds. Use -1 to keep the JMX setting.')
     }
 
     stages {
@@ -40,7 +41,8 @@ pipeline {
                         -OutDir "$env:WORKSPACE\\reports" `
                         -NumThreads ([int]$env:NUM_THREADS) `
                         -LoopCount ([int]$env:LOOP_COUNT) `
-                        -RampUp ([int]$env:RAMP_UP)
+                        -RampUp ([int]$env:RAMP_UP) `
+                        -DurationSeconds ([int]$env:DURATION_SECONDS)
                 '''
             }
         }

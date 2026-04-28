@@ -12,6 +12,7 @@ param(
     [int]$NumThreads = -1,
     [int]$RampUp = -1,
     [int]$LoopCount = -1,
+    [int]$DurationSeconds = -1,
     [string]$ThreadGroupName = "",
     [switch]$ThreadGroupRegex,
     [switch]$ThreadGroupIgnoreCase,
@@ -191,7 +192,7 @@ try {
         $tcMatches | ForEach-Object { Write-Host " - $_" }
     }
 
-    if (($NumThreads -ge 0) -or ($RampUp -ge 0) -or ($LoopCount -ge 0)) {
+    if (($NumThreads -ge 0) -or ($RampUp -ge 0) -or ($LoopCount -ge 0) -or ($DurationSeconds -ge 0)) {
         $tgMatches = New-Object System.Collections.Generic.List[string]
         $tgPattern = "(?s)<ThreadGroup\b[^>]*>.*?</ThreadGroup>"
         $tgRegexOptions = [System.Text.RegularExpressions.RegexOptions]::None
@@ -255,6 +256,40 @@ try {
                 } else {
                     $block = [regex]::Replace($block, '</ThreadGroup>', ($cfReplacement + '</ThreadGroup>'), 1)
                 }
+                $script:updated = $true
+            }
+
+            if ($DurationSeconds -ge 0) {
+                $durationReplacement = '<longProp name="ThreadGroup.duration">{0}</longProp>' -f $DurationSeconds
+                if ($block -match '<longProp name="ThreadGroup.duration">[^<]*</longProp>') {
+                    $block = [regex]::Replace($block, '<longProp name="ThreadGroup.duration">[^<]*</longProp>', $durationReplacement, 1)
+                } else {
+                    $block = [regex]::Replace($block, '</ThreadGroup>', ($durationReplacement + '</ThreadGroup>'), 1)
+                }
+
+                $schedulerReplacement = '<boolProp name="ThreadGroup.scheduler">true</boolProp>'
+                if ($block -match '<boolProp name="ThreadGroup.scheduler">[^<]*</boolProp>') {
+                    $block = [regex]::Replace($block, '<boolProp name="ThreadGroup.scheduler">[^<]*</boolProp>', $schedulerReplacement, 1)
+                } else {
+                    $block = [regex]::Replace($block, '</ThreadGroup>', ($schedulerReplacement + '</ThreadGroup>'), 1)
+                }
+
+                if ($LoopCount -lt 0) {
+                    $loopsForeverReplacement = '<stringProp name="LoopController.loops">-1</stringProp>'
+                    if ($block -match '<stringProp name="LoopController.loops">[^<]*</stringProp>') {
+                        $block = [regex]::Replace($block, '<stringProp name="LoopController.loops">[^<]*</stringProp>', $loopsForeverReplacement, 1)
+                    } else {
+                        $block = [regex]::Replace($block, '</ThreadGroup>', ($loopsForeverReplacement + '</ThreadGroup>'), 1)
+                    }
+
+                    $continueForeverReplacement = '<boolProp name="LoopController.continue_forever">true</boolProp>'
+                    if ($block -match '<boolProp name="LoopController.continue_forever">[^<]*</boolProp>') {
+                        $block = [regex]::Replace($block, '<boolProp name="LoopController.continue_forever">[^<]*</boolProp>', $continueForeverReplacement, 1)
+                    } else {
+                        $block = [regex]::Replace($block, '</ThreadGroup>', ($continueForeverReplacement + '</ThreadGroup>'), 1)
+                    }
+                }
+
                 $script:updated = $true
             }
 
