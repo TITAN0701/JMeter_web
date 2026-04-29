@@ -434,6 +434,10 @@ if ($TestPlanToRun -ne $TestPlan) {
 Write-Host "Result JTL : $ResultFile"
 Write-Host "Report Dir : $ReportDir"
 
+$previousJMeterBinEnv = $env:JMETER_BIN
+$jmeterBinDir = (Split-Path -Parent $JMeterBin).TrimEnd("\") + "\"
+$env:JMETER_BIN = $jmeterBinDir
+
 if ($UseRemote) {
     if ([string]::IsNullOrWhiteSpace($RemoteHosts)) {
         Write-Host "UseRemote is set but RemoteHosts is empty."
@@ -491,3 +495,5 @@ if (Test-Path $ResultFile) {
 if ($TempPlan -and (Test-Path $TempPlan)) {
     Remove-Item -Force $TempPlan
 }
+
+$env:JMETER_BIN = $previousJMeterBinEnv
