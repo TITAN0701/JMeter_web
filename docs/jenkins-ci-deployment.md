@@ -78,6 +78,12 @@ Jenkinsfile
 
 ## Windows Agent 需求
 
+Jenkins 2.555.1 LTS 需要 Java 21 以上。本機目前使用：
+
+```text
+C:\Program Files\Java\jdk-25
+```
+
 建議安裝位置：
 
 ```text
@@ -130,6 +136,35 @@ C:\Tools\apache-jmeter-5.6.3\bin\jmeter.bat
 ```
 
 4. 在 Jenkins job 參數 `JMETER_BIN` 填入同一路徑。
+
+## 本機 Jenkins WAR 部署
+
+本機目前採用不需 Windows service 的 WAR 方式部署：
+
+```text
+Jenkins WAR:  C:\Tools\jenkins\jenkins.war
+JENKINS_HOME: C:\Tools\jenkins\home
+Log:          C:\Tools\jenkins\logs
+URL:          http://localhost:8080
+```
+
+啟動：
+
+```powershell
+.\scripts\start-jenkins-local.ps1
+```
+
+停止：
+
+```powershell
+.\scripts\stop-jenkins-local.ps1
+```
+
+初始 admin 密碼位置：
+
+```text
+C:\Tools\jenkins\home\secrets\initialAdminPassword
+```
 
 ## Jenkins Job 建立
 
