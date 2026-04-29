@@ -32,7 +32,13 @@ $out = Join-Path $logDir "jenkins.out.log"
 $err = Join-Path $logDir "jenkins.err.log"
 
 $process = Start-Process -FilePath $JavaBin `
-    -ArgumentList @("-DJENKINS_HOME=$JenkinsHome", "-jar", $JenkinsWar, "--httpPort=$HttpPort") `
+    -ArgumentList @(
+        "-DJENKINS_HOME=$JenkinsHome",
+        "-Dhudson.model.DirectoryBrowserSupport.CSP=",
+        "-jar",
+        $JenkinsWar,
+        "--httpPort=$HttpPort"
+    ) `
     -WindowStyle Hidden `
     -RedirectStandardOutput $out `
     -RedirectStandardError $err `
