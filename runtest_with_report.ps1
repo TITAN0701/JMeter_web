@@ -154,7 +154,7 @@ function Write-StaticSummaryReport {
         Sort-Object Average -Descending
 
     $rowHtml = $rows | ForEach-Object {
-        "<tr><td>$([System.Web.HttpUtility]::HtmlEncode($_.Label))</td><td>$($_.Samples)</td><td>$($_.Errors)</td><td>$($_.ErrorPct)%</td><td>$($_.Average)</td><td>$($_.Min)</td><td>$($_.Max)</td><td>$($_.P90)</td><td>$($_.P95)</td><td>$($_.P99)</td></tr>"
+        "<tr><td>$([System.Net.WebUtility]::HtmlEncode($_.Label))</td><td>$($_.Samples)</td><td>$($_.Errors)</td><td>$($_.ErrorPct)%</td><td>$($_.Average)</td><td>$($_.Min)</td><td>$($_.Max)</td><td>$($_.P90)</td><td>$($_.P95)</td><td>$($_.P99)</td></tr>"
     }
 
     $html = @"
@@ -179,7 +179,7 @@ function Write-StaticSummaryReport {
 </head>
 <body>
   <h1>JMeter Static Summary</h1>
-  <div>Source JTL: $([System.Web.HttpUtility]::HtmlEncode([System.IO.Path]::GetFileName($JtlPath)))</div>
+  <div>Source JTL: $([System.Net.WebUtility]::HtmlEncode([System.IO.Path]::GetFileName($JtlPath)))</div>
   <div class="cards">
     <div class="card"><div class="label">Samples</div><div class="value">$total</div></div>
     <div class="card"><div class="label">Errors</div><div class="value">$errors</div></div>
@@ -595,10 +595,17 @@ if (Test-Path $ResultFile) {
             Write-Host "Custom graph enabled: $graphId ($CustomGraphMetric)"
         }
         & $JMeterBin @reportArgs
-        Write-StaticSummaryReport -JtlPath $ResultFile -OutputPath $SummaryReport
+        try {
+            Write-StaticSummaryReport -JtlPath $ResultFile -OutputPath $SummaryReport
+        } catch {
+            Write-Host "Warning: failed to create static summary report."
+            Write-Host $_.Exception.Message
+        }
         Write-Host "Done: $ResultFile"
         Write-Host "Report: $ReportDir"
-        Write-Host "Summary: $SummaryReport"
+        if (Test-Path -LiteralPath $SummaryReport) {
+            Write-Host "Summary: $SummaryReport"
+        }
         Write-Host "Open report:"
         Write-Host ("Start-Process `"{0}\index.html`"" -f $ReportDir)
     } else {
