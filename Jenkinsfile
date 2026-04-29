@@ -21,7 +21,7 @@ pipeline {
 
         string(
             name: 'CONTROLLER_INDEX',
-            defaultValue: '',
+            defaultValue: '6',
             description: '[Controller] 1-based Simple/Transaction Controller position. Recommended when names contain Chinese.'
         )
         string(
@@ -62,7 +62,7 @@ pipeline {
         )
         string(
             name: 'DURATION_SECONDS',
-            defaultValue: '600',
+            defaultValue: '300',
             description: '[Thread Group] Duration seconds override. Use -1 to keep JMX duration settings.'
         )
         booleanParam(
