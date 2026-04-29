@@ -96,30 +96,30 @@ pipeline {
 
                     $testPlan = Join-Path $env:WORKSPACE $env:TEST_PLAN
 
-                    $runArgs = @(
-                        "-JMeterBin", "$env:JMETER_BIN",
-                        "-TestPlan", "$testPlan",
-                        "-OutDir", "$env:WORKSPACE\\reports",
-                        "-NumThreads", ([int]$env:NUM_THREADS),
-                        "-LoopCount", ([int]$env:LOOP_COUNT),
-                        "-RampUp", ([int]$env:RAMP_UP),
-                        "-DurationSeconds", ([int]$env:DURATION_SECONDS)
-                    )
+                    $runArgs = @{
+                        JMeterBin = "$env:JMETER_BIN"
+                        TestPlan = "$testPlan"
+                        OutDir = "$env:WORKSPACE\\reports"
+                        NumThreads = ([int]$env:NUM_THREADS)
+                        LoopCount = ([int]$env:LOOP_COUNT)
+                        RampUp = ([int]$env:RAMP_UP)
+                        DurationSeconds = ([int]$env:DURATION_SECONDS)
+                    }
 
                     if (-not [string]::IsNullOrWhiteSpace($env:CONTROLLER_INDEX)) {
-                        $runArgs += @("-ControllerIndex", ([int]$env:CONTROLLER_INDEX))
+                        $runArgs.ControllerIndex = ([int]$env:CONTROLLER_INDEX)
                     }
 
                     if (-not [string]::IsNullOrWhiteSpace($env:CONTROLLER_NAME)) {
-                        $runArgs += @("-ControllerName", "$env:CONTROLLER_NAME")
-                        if ($env:CONTROLLER_REGEX -eq "true") { $runArgs += "-ControllerRegex" }
-                        if ($env:CONTROLLER_IGNORE_CASE -eq "true") { $runArgs += "-ControllerIgnoreCase" }
+                        $runArgs.ControllerName = "$env:CONTROLLER_NAME"
+                        if ($env:CONTROLLER_REGEX -eq "true") { $runArgs.ControllerRegex = $true }
+                        if ($env:CONTROLLER_IGNORE_CASE -eq "true") { $runArgs.ControllerIgnoreCase = $true }
                     }
 
                     if (-not [string]::IsNullOrWhiteSpace($env:THREAD_GROUP_NAME)) {
-                        $runArgs += @("-ThreadGroupName", "$env:THREAD_GROUP_NAME")
-                        if ($env:THREAD_GROUP_REGEX -eq "true") { $runArgs += "-ThreadGroupRegex" }
-                        if ($env:THREAD_GROUP_IGNORE_CASE -eq "true") { $runArgs += "-ThreadGroupIgnoreCase" }
+                        $runArgs.ThreadGroupName = "$env:THREAD_GROUP_NAME"
+                        if ($env:THREAD_GROUP_REGEX -eq "true") { $runArgs.ThreadGroupRegex = $true }
+                        if ($env:THREAD_GROUP_IGNORE_CASE -eq "true") { $runArgs.ThreadGroupIgnoreCase = $true }
                     }
 
                     .\\runtest_with_report.ps1 @runArgs
