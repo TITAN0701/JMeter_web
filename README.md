@@ -224,6 +224,12 @@ Archive：封存 JTL、HTML report、log
 
 - `JMETER_BIN`: Jenkins agent 上的 `jmeter.bat` 路徑
 - `TEST_PLAN`: 要執行的 `.jmx`，預設 `tests\20260204_3.jmx`
+- `TRANSACTION_CONTROLLER_NAME`: 要啟用的 Transaction Controller，空白代表沿用 JMX
+- `TRANSACTION_CONTROLLER_REGEX`: 是否用 regex 比對 Controller
+- `TRANSACTION_CONTROLLER_IGNORE_CASE`: 是否忽略大小寫
+- `THREAD_GROUP_NAME`: 要覆寫的 Thread Group，空白代表套用全部 Thread Group
+- `THREAD_GROUP_REGEX`: 是否用 regex 比對 Thread Group
+- `THREAD_GROUP_IGNORE_CASE`: 是否忽略大小寫
 - `NUM_THREADS`: Thread 數
 - `LOOP_COUNT`: Loop 次數
 - `RAMP_UP`: Ramp-up 秒數
@@ -240,6 +246,12 @@ Performance Plugin 門檻：
 
 - 錯誤率大於 5%: build unstable
 - 錯誤率大於 20%: build failed
+
+完整 CI 環境部署步驟請看：
+
+```text
+docs/jenkins-ci-deployment.md
+```
 
 ## Java 輔助工具
 
