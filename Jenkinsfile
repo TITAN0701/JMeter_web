@@ -75,6 +75,16 @@ pipeline {
             defaultValue: false,
             description: '[Thread Group] Treat THREAD_GROUP_NAME as regex.'
         )
+        booleanParam(
+            name: 'COLLECT_SYSTEM_METRICS',
+            defaultValue: true,
+            description: '[System] Collect Jenkins/JMeter host CPU, memory, disk, and network metrics.'
+        )
+        string(
+            name: 'SYSTEM_METRICS_INTERVAL_SECONDS',
+            defaultValue: '5',
+            description: '[System] System metrics sampling interval in seconds.'
+        )
     }
 
     stages {
@@ -95,6 +105,17 @@ pipeline {
                     $ErrorActionPreference = "Stop"
 
                     $testPlan = Join-Path $env:WORKSPACE $env:TEST_PLAN
+                    $metricsJob = $null
+
+                    if ($env:COLLECT_SYSTEM_METRICS -eq "true") {
+                        $metricsScript = Join-Path $env:WORKSPACE "scripts\\collect-system-metrics.ps1"
+                        $metricsPath = Join-Path $env:WORKSPACE "reports\\system_metrics.csv"
+                        $metricsJob = Start-Job -ScriptBlock {
+                            param($ScriptPath, $OutputPath, $IntervalSeconds)
+                            & $ScriptPath -OutputPath $OutputPath -IntervalSeconds $IntervalSeconds
+                        } -ArgumentList $metricsScript, $metricsPath, ([int]$env:SYSTEM_METRICS_INTERVAL_SECONDS)
+                        Write-Host "System metrics collection started: $metricsPath"
+                    }
 
                     $runArgs = @{
                         JMeterBin = "$env:JMETER_BIN"
@@ -122,7 +143,16 @@ pipeline {
                         if ($env:THREAD_GROUP_IGNORE_CASE -eq "true") { $runArgs.ThreadGroupIgnoreCase = $true }
                     }
 
-                    .\\runtest_with_report.ps1 @runArgs
+                    try {
+                        .\\runtest_with_report.ps1 @runArgs
+                    } finally {
+                        if ($null -ne $metricsJob) {
+                            Stop-Job -Job $metricsJob -ErrorAction SilentlyContinue
+                            Receive-Job -Job $metricsJob -ErrorAction SilentlyContinue | Write-Host
+                            Remove-Job -Job $metricsJob -Force -ErrorAction SilentlyContinue
+                            Write-Host "System metrics collection stopped."
+                        }
+                    }
                 '''
             }
         }
@@ -142,7 +172,7 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: 'reports/results_*.jtl,reports/html_*/**/*,jmeter.log,logs/**/*.log', allowEmptyArchive: true
+            archiveArtifacts artifacts: 'reports/results_*.jtl,reports/html_*/**/*,reports/system_metrics.csv,jmeter.log,logs/**/*.log', allowEmptyArchive: true
         }
     }
 }
