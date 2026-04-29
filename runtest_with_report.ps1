@@ -92,6 +92,121 @@ function Get-JtlSampleCount {
     return $totalLines
 }
 
+function Get-PercentileValue {
+    param(
+        [double[]]$Values,
+        [double]$Percentile
+    )
+
+    if (-not $Values -or $Values.Count -eq 0) { return 0 }
+
+    $sorted = $Values | Sort-Object
+    $rank = [Math]::Ceiling(($Percentile / 100) * $sorted.Count) - 1
+    $rank = [Math]::Max(0, [Math]::Min($rank, $sorted.Count - 1))
+    return [double]$sorted[$rank]
+}
+
+function Write-StaticSummaryReport {
+    param(
+        [string]$JtlPath,
+        [string]$OutputPath
+    )
+
+    if (-not (Test-Path -LiteralPath $JtlPath)) { return }
+
+    $samples = Import-Csv -Path $JtlPath
+    if (-not $samples -or $samples.Count -eq 0) { return }
+
+    $elapsedValues = @($samples | ForEach-Object { [double]$_.elapsed })
+    $timestamps = @($samples | ForEach-Object { [double]$_.timeStamp })
+    $total = $samples.Count
+    $errors = @($samples | Where-Object { $_.success -ne "true" }).Count
+    $errorPct = if ($total -gt 0) { [Math]::Round(($errors / $total) * 100, 2) } else { 0 }
+    $avg = [Math]::Round((($elapsedValues | Measure-Object -Average).Average), 2)
+    $min = [Math]::Round((($elapsedValues | Measure-Object -Minimum).Minimum), 2)
+    $max = [Math]::Round((($elapsedValues | Measure-Object -Maximum).Maximum), 2)
+    $p90 = [Math]::Round((Get-PercentileValue -Values $elapsedValues -Percentile 90), 2)
+    $p95 = [Math]::Round((Get-PercentileValue -Values $elapsedValues -Percentile 95), 2)
+    $p99 = [Math]::Round((Get-PercentileValue -Values $elapsedValues -Percentile 99), 2)
+    $durationSeconds = [Math]::Max(1, ((($timestamps | Measure-Object -Maximum).Maximum - ($timestamps | Measure-Object -Minimum).Minimum) / 1000))
+    $throughput = [Math]::Round($total / $durationSeconds, 2)
+
+    $rows = $samples |
+        Group-Object label |
+        ForEach-Object {
+            $group = $_.Group
+            $groupElapsed = @($group | ForEach-Object { [double]$_.elapsed })
+            $groupTotal = $group.Count
+            $groupErrors = @($group | Where-Object { $_.success -ne "true" }).Count
+            [pscustomobject]@{
+                Label = $_.Name
+                Samples = $groupTotal
+                Errors = $groupErrors
+                ErrorPct = if ($groupTotal -gt 0) { [Math]::Round(($groupErrors / $groupTotal) * 100, 2) } else { 0 }
+                Average = [Math]::Round((($groupElapsed | Measure-Object -Average).Average), 2)
+                Min = [Math]::Round((($groupElapsed | Measure-Object -Minimum).Minimum), 2)
+                Max = [Math]::Round((($groupElapsed | Measure-Object -Maximum).Maximum), 2)
+                P90 = [Math]::Round((Get-PercentileValue -Values $groupElapsed -Percentile 90), 2)
+                P95 = [Math]::Round((Get-PercentileValue -Values $groupElapsed -Percentile 95), 2)
+                P99 = [Math]::Round((Get-PercentileValue -Values $groupElapsed -Percentile 99), 2)
+            }
+        } |
+        Sort-Object Average -Descending
+
+    $rowHtml = $rows | ForEach-Object {
+        "<tr><td>$([System.Web.HttpUtility]::HtmlEncode($_.Label))</td><td>$($_.Samples)</td><td>$($_.Errors)</td><td>$($_.ErrorPct)%</td><td>$($_.Average)</td><td>$($_.Min)</td><td>$($_.Max)</td><td>$($_.P90)</td><td>$($_.P95)</td><td>$($_.P99)</td></tr>"
+    }
+
+    $html = @"
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JMeter Static Summary</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; color: #1f2933; }
+    h1 { margin-bottom: 8px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 20px 0; }
+    .card { border: 1px solid #d7dde4; border-radius: 6px; padding: 12px; background: #f8fafc; }
+    .label { font-size: 12px; color: #5f6b7a; }
+    .value { font-size: 22px; font-weight: 700; margin-top: 6px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 16px; font-size: 13px; }
+    th, td { border: 1px solid #d7dde4; padding: 7px 8px; text-align: right; }
+    th:first-child, td:first-child { text-align: left; }
+    th { background: #eef2f6; }
+    tr:nth-child(even) { background: #f9fbfd; }
+  </style>
+</head>
+<body>
+  <h1>JMeter Static Summary</h1>
+  <div>Source JTL: $([System.Web.HttpUtility]::HtmlEncode([System.IO.Path]::GetFileName($JtlPath)))</div>
+  <div class="cards">
+    <div class="card"><div class="label">Samples</div><div class="value">$total</div></div>
+    <div class="card"><div class="label">Errors</div><div class="value">$errors</div></div>
+    <div class="card"><div class="label">Error %</div><div class="value">$errorPct%</div></div>
+    <div class="card"><div class="label">Throughput / sec</div><div class="value">$throughput</div></div>
+    <div class="card"><div class="label">Avg ms</div><div class="value">$avg</div></div>
+    <div class="card"><div class="label">Min ms</div><div class="value">$min</div></div>
+    <div class="card"><div class="label">Max ms</div><div class="value">$max</div></div>
+    <div class="card"><div class="label">P90 ms</div><div class="value">$p90</div></div>
+    <div class="card"><div class="label">P95 ms</div><div class="value">$p95</div></div>
+    <div class="card"><div class="label">P99 ms</div><div class="value">$p99</div></div>
+  </div>
+  <h2>Requests</h2>
+  <table>
+    <thead><tr><th>Label</th><th>Samples</th><th>Errors</th><th>Error %</th><th>Avg</th><th>Min</th><th>Max</th><th>P90</th><th>P95</th><th>P99</th></tr></thead>
+    <tbody>
+      $($rowHtml -join "`n")
+    </tbody>
+  </table>
+</body>
+</html>
+"@
+
+    $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+    [System.IO.File]::WriteAllText($OutputPath, $html, $utf8NoBom)
+}
+
 try {
     $baseDir = Split-Path -Parent $TestPlan
     $rawJmx = [System.IO.File]::ReadAllText($TestPlan)
@@ -423,6 +538,7 @@ try {
 }
 $ResultFile = Join-Path $OutDir ("results_{0}.jtl" -f $Timestamp)
 $ReportDir = Join-Path $OutDir ("html_{0}" -f $Timestamp)
+$SummaryReport = Join-Path $OutDir ("summary_{0}.html" -f $Timestamp)
 
 New-Item -ItemType Directory -Path $OutDir -Force | Out-Null
 
@@ -433,6 +549,7 @@ if ($TestPlanToRun -ne $TestPlan) {
 }
 Write-Host "Result JTL : $ResultFile"
 Write-Host "Report Dir : $ReportDir"
+Write-Host "Summary Report : $SummaryReport"
 
 $previousJMeterBinEnv = $env:JMETER_BIN
 $jmeterBinDir = (Split-Path -Parent $JMeterBin).TrimEnd("\") + "\"
@@ -478,8 +595,10 @@ if (Test-Path $ResultFile) {
             Write-Host "Custom graph enabled: $graphId ($CustomGraphMetric)"
         }
         & $JMeterBin @reportArgs
+        Write-StaticSummaryReport -JtlPath $ResultFile -OutputPath $SummaryReport
         Write-Host "Done: $ResultFile"
         Write-Host "Report: $ReportDir"
+        Write-Host "Summary: $SummaryReport"
         Write-Host "Open report:"
         Write-Host ("Start-Process `"{0}\index.html`"" -f $ReportDir)
     } else {

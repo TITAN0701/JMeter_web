@@ -172,7 +172,7 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: 'reports/results_*.jtl,reports/html_*/**/*,reports/system_metrics.csv,jmeter.log,logs/**/*.log', allowEmptyArchive: true
+            archiveArtifacts artifacts: 'reports/results_*.jtl,reports/summary_*.html,reports/html_*/**/*,reports/system_metrics.csv,jmeter.log,logs/**/*.log', allowEmptyArchive: true
         }
     }
 }
