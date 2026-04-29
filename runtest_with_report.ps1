@@ -6,6 +6,10 @@ param(
     [switch]$UseRemote,
     [string]$RemoteHosts = "",
     [switch]$SkipMissingCsv = $true,
+    [string]$ControllerName = "",
+    [int]$ControllerIndex = 0,
+    [switch]$ControllerRegex,
+    [switch]$ControllerIgnoreCase,
     [string]$TransactionControllerName = "",
     [switch]$TransactionControllerRegex,
     [switch]$TransactionControllerIgnoreCase,
@@ -135,7 +139,106 @@ try {
         }
     }
 
-    if (-not [string]::IsNullOrWhiteSpace($TransactionControllerName)) {
+    if ($ControllerIndex -gt 0 -and -not [string]::IsNullOrWhiteSpace($ControllerName)) {
+        Write-Host "Use either ControllerIndex or ControllerName, not both."
+        exit 1
+    }
+
+    if ($ControllerIndex -gt 0) {
+        $controllerMatches = New-Object System.Collections.Generic.List[string]
+        $controllerPattern = "(?s)<(?:GenericController|TransactionController)\b[^>]*>"
+        $script:currentControllerIndex = 0
+
+        $rawJmx = [regex]::Replace($rawJmx, $controllerPattern, {
+            param($m)
+            $script:currentControllerIndex++
+            $tag = $m.Value
+            $nameMatch = [regex]::Match($tag, 'testname="([^"]*)"')
+            $name = if ($nameMatch.Success) { $nameMatch.Groups[1].Value } else { "" }
+
+            $newTag = $tag
+            if ($script:currentControllerIndex -eq $ControllerIndex) {
+                $null = $controllerMatches.Add($name)
+                if ($tag -match 'enabled="false"') {
+                    $newTag = [regex]::Replace($tag, 'enabled="false"', 'enabled="true"', 1)
+                } elseif ($tag -notmatch 'enabled="') {
+                    $newTag = [regex]::Replace($tag, '(<(?:GenericController|TransactionController)\b)', '$1 enabled="true"', 1)
+                }
+            } else {
+                if ($tag -match 'enabled="true"') {
+                    $newTag = [regex]::Replace($tag, 'enabled="true"', 'enabled="false"', 1)
+                } elseif ($tag -notmatch 'enabled="') {
+                    $newTag = [regex]::Replace($tag, '(<(?:GenericController|TransactionController)\b)', '$1 enabled="false"', 1)
+                }
+            }
+
+            if ($newTag -ne $tag) { $script:updated = $true }
+            return $newTag
+        })
+
+        if ($controllerMatches.Count -eq 0) {
+            Write-Host "Controller index $ControllerIndex is out of range. Available range: 1-$script:currentControllerIndex"
+            exit 1
+        }
+
+        Write-Host "Controller index: $ControllerIndex"
+        $controllerMatches | ForEach-Object { Write-Host " - $_" }
+    } elseif (-not [string]::IsNullOrWhiteSpace($ControllerName)) {
+        $controllerMatches = New-Object System.Collections.Generic.List[string]
+        $controllerPattern = "(?s)<(?:GenericController|TransactionController)\b[^>]*>"
+        $regexOptions = [System.Text.RegularExpressions.RegexOptions]::None
+        if ($ControllerIgnoreCase) {
+            $regexOptions = $regexOptions -bor [System.Text.RegularExpressions.RegexOptions]::IgnoreCase
+        }
+
+        $rawJmx = [regex]::Replace($rawJmx, $controllerPattern, {
+            param($m)
+            $tag = $m.Value
+            $nameMatch = [regex]::Match($tag, 'testname="([^"]*)"')
+            $name = if ($nameMatch.Success) { $nameMatch.Groups[1].Value } else { "" }
+
+            $isMatch = $false
+            if ($nameMatch.Success) {
+                if ($ControllerRegex) {
+                    $isMatch = [regex]::IsMatch($name, $ControllerName, $regexOptions)
+                } else {
+                    if ($ControllerIgnoreCase) {
+                        $isMatch = $name.Equals($ControllerName, [System.StringComparison]::OrdinalIgnoreCase)
+                    } else {
+                        $isMatch = ($name -eq $ControllerName)
+                    }
+                }
+            }
+
+            $newTag = $tag
+            if ($isMatch) {
+                $null = $controllerMatches.Add($name)
+                if ($tag -match 'enabled="false"') {
+                    $newTag = [regex]::Replace($tag, 'enabled="false"', 'enabled="true"', 1)
+                } elseif ($tag -notmatch 'enabled="') {
+                    $newTag = [regex]::Replace($tag, '(<(?:GenericController|TransactionController)\b)', '$1 enabled="true"', 1)
+                }
+            } else {
+                if ($tag -match 'enabled="true"') {
+                    $newTag = [regex]::Replace($tag, 'enabled="true"', 'enabled="false"', 1)
+                } elseif ($tag -notmatch 'enabled="') {
+                    $newTag = [regex]::Replace($tag, '(<(?:GenericController|TransactionController)\b)', '$1 enabled="false"', 1)
+                }
+            }
+
+            if ($newTag -ne $tag) { $script:updated = $true }
+            return $newTag
+        })
+
+        if ($controllerMatches.Count -eq 0) {
+            Write-Host "Controller not found: $ControllerName"
+            exit 1
+        }
+
+        Write-Host "Controller filter: $ControllerName"
+        Write-Host ("Matched {0} controller(s)" -f $controllerMatches.Count)
+        $controllerMatches | ForEach-Object { Write-Host " - $_" }
+    } elseif (-not [string]::IsNullOrWhiteSpace($TransactionControllerName)) {
         $tcMatches = New-Object System.Collections.Generic.List[string]
         $tcPattern = "(?s)<TransactionController\b[^>]*>"
         $regexOptions = [System.Text.RegularExpressions.RegexOptions]::None
