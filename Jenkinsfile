@@ -8,7 +8,7 @@ pipeline {
     }
 
     parameters {
-        string(name: 'JMETER_BIN', defaultValue: 'C:\\Tools\\apache-jmeter-5.6.3\\bin\\jmeter.bat', description: 'Path to jmeter.bat on the Jenkins agent')
+        string(name: 'JMETER_BIN', defaultValue: 'C:\\Users\\suppo\\Desktop\\apache-jmeter-5.6.3\\apache-jmeter-5.6.3\\bin\\jmeter.bat', description: 'Path to jmeter.bat on the Jenkins agent')
         string(name: 'TEST_PLAN', defaultValue: 'tests\\20260204_3.jmx', description: 'JMX test plan path relative to workspace')
         string(name: 'TRANSACTION_CONTROLLER_NAME', defaultValue: '', description: 'Optional Transaction Controller name to enable. Empty keeps JMX settings.')
         booleanParam(name: 'TRANSACTION_CONTROLLER_REGEX', defaultValue: false, description: 'Treat TRANSACTION_CONTROLLER_NAME as regex')
