@@ -13462,12 +13462,12 @@ if (subResults.length &gt; 0) {
         <boolProp name="DNSCacheManager.isCustomResolver">true</boolProp>
       </DNSCacheManager>
       <hashTree/>
-      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager">
+      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
         <collectionProp name="AuthManager.auth_list"/>
         <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
       </AuthManager>
       <hashTree/>
-      <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder">
+      <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder" enabled="true">
         <stringProp name="ProxyControlGui.port">8888</stringProp>
         <collectionProp name="ProxyControlGui.exclude_list">
           <stringProp name="-359284051">.*\.js$           // ? JavaScript 瑼?</stringProp>
@@ -13524,7 +13524,7 @@ if (subResults.length &gt; 0) {
         <longProp name="randomSeed">0</longProp>
       </PreciseThroughputTimer>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
         <intProp name="ThreadGroup.num_threads">2</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <longProp name="ThreadGroup.duration">0</longProp>
@@ -38098,7 +38098,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+            <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
               <boolProp name="ResultCollector.error_logging">false</boolProp>
               <objProp>
                 <name>saveConfig</name>
@@ -38135,7 +38135,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
               <stringProp name="filename"></stringProp>
             </ResultCollector>
             <hashTree/>
-            <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
+            <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
               <boolProp name="ResultCollector.error_logging">false</boolProp>
               <objProp>
                 <name>saveConfig</name>
@@ -38173,7 +38173,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </ResultCollector>
             <hashTree/>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Flight Status Page (https://www.starlux-airlines.com/zh-TW/special-event/flight-status?date=20250614&amp;airports=HKG%2FMFM)">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Flight Status Page (https://www.starlux-airlines.com/zh-TW/special-event/flight-status?date=20250614&amp;airports=HKG%2FMFM)" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
@@ -52816,7 +52816,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+            <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
               <boolProp name="ResultCollector.error_logging">false</boolProp>
               <objProp>
                 <name>saveConfig</name>
@@ -52853,7 +52853,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
               <stringProp name="filename"></stringProp>
             </ResultCollector>
             <hashTree/>
-            <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
+            <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
               <boolProp name="ResultCollector.error_logging">false</boolProp>
               <objProp>
                 <name>saveConfig</name>
@@ -52891,12 +52891,12 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </ResultCollector>
             <hashTree/>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Flight Status API (https://ecapi.starlux-airlines.com/flightSchedule/v2/flight-status-erc?date=20250614&amp;airports=HKG%2FMFM)">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Flight Status API (https://ecapi.starlux-airlines.com/flightSchedule/v2/flight-status-erc?date=20250614&amp;airports=HKG%2FMFM)" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Flight Status API Request">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Flight Status API Request" enabled="true">
               <stringProp name="HTTPSampler.domain">ecapi.starlux-airlines.com</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -52925,7 +52925,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion">
+              <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
                 <stringProp name="JSON_PATH">$.success</stringProp>
                 <stringProp name="EXPECTED_VALUE">true</stringProp>
                 <boolProp name="JSONVALIDATION">true</boolProp>
@@ -52934,7 +52934,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
                 <boolProp name="ISREGEX">false</boolProp>
               </JSONPathAssertion>
               <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code is 200">
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code is 200" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="49586">200</stringProp>
                 </collectionProp>
@@ -52944,7 +52944,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
                 <intProp name="Assertion.test_type">8</intProp>
               </ResponseAssertion>
               <hashTree/>
-              <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+              <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
                 <boolProp name="ResultCollector.error_logging">false</boolProp>
                 <objProp>
                   <name>saveConfig</name>
@@ -52981,7 +52981,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
                 <stringProp name="filename"></stringProp>
               </ResultCollector>
               <hashTree/>
-              <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
+              <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
                 <boolProp name="ResultCollector.error_logging">false</boolProp>
                 <objProp>
                   <name>saveConfig</name>
@@ -53019,7 +53019,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
               </ResultCollector>
               <hashTree/>
             </hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="" elementType="Header">
                   <stringProp name="Header.name">Accept</stringProp>
@@ -72287,7 +72287,7 @@ en=webHomeCarouselControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addC
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -72324,7 +72324,7 @@ en=webHomeCarouselControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addC
             <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
-          <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
+          <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -72360,6 +72360,65 @@ en=webHomeCarouselControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addC
             </objProp>
             <stringProp name="filename"></stringProp>
           </ResultCollector>
+          <hashTree/>
+          <kg.apc.jmeter.perfmon.PerfMonCollector guiclass="kg.apc.jmeter.vizualizers.PerfMonGui" testclass="kg.apc.jmeter.perfmon.PerfMonCollector" testname="jp@gc - PerfMon Metrics Collector" enabled="false">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+            <longProp name="interval_grouping">1000</longProp>
+            <boolProp name="graph_aggregated">false</boolProp>
+            <stringProp name="include_sample_labels"></stringProp>
+            <stringProp name="exclude_sample_labels"></stringProp>
+            <stringProp name="start_offset"></stringProp>
+            <stringProp name="end_offset"></stringProp>
+            <boolProp name="include_checkbox_state">false</boolProp>
+            <boolProp name="exclude_checkbox_state">false</boolProp>
+            <collectionProp name="metricConnections">
+              <collectionProp name="-912057670">
+                <stringProp name="1505998205">127.0.0.1</stringProp>
+                <stringProp name="1600768">4444</stringProp>
+                <stringProp name="66952">CPU</stringProp>
+                <stringProp name="0"></stringProp>
+              </collectionProp>
+              <collectionProp name="1082195305">
+                <stringProp name="1505998205">127.0.0.1</stringProp>
+                <stringProp name="1600768">4444</stringProp>
+                <stringProp name="-1993889503">Memory</stringProp>
+                <stringProp name="0"></stringProp>
+              </collectionProp>
+            </collectionProp>
+          </kg.apc.jmeter.perfmon.PerfMonCollector>
           <hashTree/>
         </hashTree>
         <JSR223Listener guiclass="TestBeanGUI" testclass="JSR223Listener" testname="JSR223 Listener" enabled="true">

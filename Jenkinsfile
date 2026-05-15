@@ -78,7 +78,7 @@ pipeline {
         booleanParam(
             name: 'COLLECT_SYSTEM_METRICS',
             defaultValue: true,
-            description: '[System] Collect Jenkins/JMeter host CPU, memory, disk, and network metrics.'
+            description: '[System] Collect Jenkins/JMeter host CPU, memory, disk, network, process, and workspace metrics.'
         )
         string(
             name: 'SYSTEM_METRICS_INTERVAL_SECONDS',
@@ -111,9 +111,9 @@ pipeline {
                         $metricsScript = Join-Path $env:WORKSPACE "scripts\\collect-system-metrics.ps1"
                         $metricsPath = Join-Path $env:WORKSPACE "reports\\system_metrics.csv"
                         $metricsJob = Start-Job -ScriptBlock {
-                            param($ScriptPath, $OutputPath, $IntervalSeconds)
-                            & $ScriptPath -OutputPath $OutputPath -IntervalSeconds $IntervalSeconds
-                        } -ArgumentList $metricsScript, $metricsPath, ([int]$env:SYSTEM_METRICS_INTERVAL_SECONDS)
+                            param($ScriptPath, $OutputPath, $WorkspacePath, $IntervalSeconds)
+                            & $ScriptPath -OutputPath $OutputPath -WorkspacePath $WorkspacePath -IntervalSeconds $IntervalSeconds
+                        } -ArgumentList $metricsScript, $metricsPath, $env:WORKSPACE, ([int]$env:SYSTEM_METRICS_INTERVAL_SECONDS)
                         Write-Host "System metrics collection started: $metricsPath"
                     }
 
