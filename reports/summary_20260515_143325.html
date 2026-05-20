@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JMeter Static Summary</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; color: #1f2933; }
+    h1 { margin-bottom: 8px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 20px 0; }
+    .card { border: 1px solid #d7dde4; border-radius: 6px; padding: 12px; background: #f8fafc; }
+    .label { font-size: 12px; color: #5f6b7a; }
+    .value { font-size: 22px; font-weight: 700; margin-top: 6px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 16px; font-size: 13px; }
+    th, td { border: 1px solid #d7dde4; padding: 7px 8px; text-align: right; }
+    th:first-child, td:first-child { text-align: left; }
+    th { background: #eef2f6; }
+    tr:nth-child(even) { background: #f9fbfd; }
+  </style>
+</head>
+<body>
+  <h1>JMeter Static Summary</h1>
+  <div>Source JTL: results_20260515_143325.jtl</div>
+  <div class="cards">
+    <div class="card"><div class="label">Samples</div><div class="value">65</div></div>
+    <div class="card"><div class="label">Errors</div><div class="value">0</div></div>
+    <div class="card"><div class="label">Error %</div><div class="value">0%</div></div>
+    <div class="card"><div class="label">Throughput / sec</div><div class="value">7.22</div></div>
+    <div class="card"><div class="label">Avg ms</div><div class="value">121.66</div></div>
+    <div class="card"><div class="label">Min ms</div><div class="value">13</div></div>
+    <div class="card"><div class="label">Max ms</div><div class="value">891</div></div>
+    <div class="card"><div class="label">P90 ms</div><div class="value">311</div></div>
+    <div class="card"><div class="label">P95 ms</div><div class="value">437</div></div>
+    <div class="card"><div class="label">P99 ms</div><div class="value">891</div></div>
+  </div>
+  <h2>Requests</h2>
+  <table>
+    <thead><tr><th>Label</th><th>Samples</th><th>Errors</th><th>Error %</th><th>Avg</th><th>Min</th><th>Max</th><th>P90</th><th>P95</th><th>P99</th></tr></thead>
+    <tbody>
+      <tr><td>test1/cskapi/api/child/170/avatar-31</td><td>1</td><td>0</td><td>0%</td><td>891</td><td>891</td><td>891</td><td>891</td><td>891</td><td>891</td></tr>
+<tr><td>test1/cskapi/api/auth/login-2</td><td>1</td><td>0</td><td>0%</td><td>495</td><td>495</td><td>495</td><td>495</td><td>495</td><td>495</td></tr>
+<tr><td>test1/cskapi/api/child/228/avatar-25</td><td>1</td><td>0</td><td>0%</td><td>440</td><td>440</td><td>440</td><td>440</td><td>440</td><td>440</td></tr>
+<tr><td>test1/cskapi/api/child/188/avatar-98</td><td>1</td><td>0</td><td>0%</td><td>437</td><td>437</td><td>437</td><td>437</td><td>437</td><td>437</td></tr>
+<tr><td>test1/cskapi/api/about/image/17-18</td><td>1</td><td>0</td><td>0%</td><td>423</td><td>423</td><td>423</td><td>423</td><td>423</td><td>423</td></tr>
+<tr><td>test1/cskapi/api/about/image/24-87</td><td>1</td><td>0</td><td>0%</td><td>395</td><td>395</td><td>395</td><td>395</td><td>395</td><td>395</td></tr>
+<tr><td>test1/cskapi/api/about/image/13-17</td><td>1</td><td>0</td><td>0%</td><td>311</td><td>311</td><td>311</td><td>311</td><td>311</td><td>311</td></tr>
+<tr><td>test1/cskapi/api/child/170/avatar-101</td><td>1</td><td>0</td><td>0%</td><td>303</td><td>303</td><td>303</td><td>303</td><td>303</td><td>303</td></tr>
+<tr><td>test1/cskapi/api/about/image/25-94</td><td>1</td><td>0</td><td>0%</td><td>302</td><td>302</td><td>302</td><td>302</td><td>302</td><td>302</td></tr>
+<tr><td>test1/cskapi/api/account/1/avatar-6</td><td>1</td><td>0</td><td>0%</td><td>278</td><td>278</td><td>278</td><td>278</td><td>278</td><td>278</td></tr>
+<tr><td>test1/cskapi/api/about/image/22-88</td><td>1</td><td>0</td><td>0%</td><td>264</td><td>264</td><td>264</td><td>264</td><td>264</td><td>264</td></tr>
+<tr><td>test1/cskapi/api/about/image/10-14</td><td>1</td><td>0</td><td>0%</td><td>248</td><td>248</td><td>248</td><td>248</td><td>248</td><td>248</td></tr>
+<tr><td>test1/cskapi/api/about/image/20-92</td><td>1</td><td>0</td><td>0%</td><td>180</td><td>180</td><td>180</td><td>180</td><td>180</td><td>180</td></tr>
+<tr><td>test1/cskapi/api/about/image/19-20</td><td>1</td><td>0</td><td>0%</td><td>159</td><td>159</td><td>159</td><td>159</td><td>159</td><td>159</td></tr>
+<tr><td>test1/cskapi/api/child/228/avatar-95</td><td>1</td><td>0</td><td>0%</td><td>158</td><td>158</td><td>158</td><td>158</td><td>158</td><td>158</td></tr>
+<tr><td>test1/cskapi/api/about/image/18-19</td><td>1</td><td>0</td><td>0%</td><td>132</td><td>132</td><td>132</td><td>132</td><td>132</td><td>132</td></tr>
+<tr><td>test1/cskapi/api/account-5</td><td>1</td><td>0</td><td>0%</td><td>132</td><td>132</td><td>132</td><td>132</td><td>132</td><td>132</td></tr>
+<tr><td>test1/cskapi/api/about/image/12-16</td><td>1</td><td>0</td><td>0%</td><td>132</td><td>132</td><td>132</td><td>132</td><td>132</td><td>132</td></tr>
+<tr><td>test1/cskapi/api/child/188/avatar-28</td><td>1</td><td>0</td><td>0%</td><td>126</td><td>126</td><td>126</td><td>126</td><td>126</td><td>126</td></tr>
+<tr><td>test1/cskapi/api/child/mine-27</td><td>1</td><td>0</td><td>0%</td><td>124</td><td>124</td><td>124</td><td>124</td><td>124</td><td>124</td></tr>
+<tr><td>test1/cskapi/api/child/174/avatar-30</td><td>1</td><td>0</td><td>0%</td><td>117</td><td>117</td><td>117</td><td>117</td><td>117</td><td>117</td></tr>
+<tr><td>test1/cskapi/api/about/image/23-89</td><td>1</td><td>0</td><td>0%</td><td>108</td><td>108</td><td>108</td><td>108</td><td>108</td><td>108</td></tr>
+<tr><td>test1/cskapi/api/about/image/21-91</td><td>1</td><td>0</td><td>0%</td><td>104</td><td>104</td><td>104</td><td>104</td><td>104</td><td>104</td></tr>
+<tr><td>test1/cskapi/api/child/mine-23</td><td>1</td><td>0</td><td>0%</td><td>99</td><td>99</td><td>99</td><td>99</td><td>99</td><td>99</td></tr>
+<tr><td>test1/cskapi/api/child/mine-97</td><td>1</td><td>0</td><td>0%</td><td>97</td><td>97</td><td>97</td><td>97</td><td>97</td><td>97</td></tr>
+<tr><td>test1/cskapi/api/child/mine-35</td><td>1</td><td>0</td><td>0%</td><td>94</td><td>94</td><td>94</td><td>94</td><td>94</td><td>94</td></tr>
+<tr><td>test1/cskapi/api/child/180/avatar-99</td><td>1</td><td>0</td><td>0%</td><td>94</td><td>94</td><td>94</td><td>94</td><td>94</td><td>94</td></tr>
+<tr><td>test1/cskapi/api/child/174/avatar-100</td><td>1</td><td>0</td><td>0%</td><td>92</td><td>92</td><td>92</td><td>92</td><td>92</td><td>92</td></tr>
+<tr><td>test1/cskapi/api/about/image/26-93</td><td>1</td><td>0</td><td>0%</td><td>88</td><td>88</td><td>88</td><td>88</td><td>88</td><td>88</td></tr>
+<tr><td>test1/cskapi/api/child/235-47</td><td>1</td><td>0</td><td>0%</td><td>74</td><td>74</td><td>74</td><td>74</td><td>74</td><td>74</td></tr>
+<tr><td>test1/cskapi/api/child/240-37</td><td>1</td><td>0</td><td>0%</td><td>65</td><td>65</td><td>65</td><td>65</td><td>65</td><td>65</td></tr>
+<tr><td>test1/cskapi/api/child/236-45</td><td>1</td><td>0</td><td>0%</td><td>60</td><td>60</td><td>60</td><td>60</td><td>60</td><td>60</td></tr>
+<tr><td>test1/cskapi/api/question/ages-7</td><td>1</td><td>0</td><td>0%</td><td>60</td><td>60</td><td>60</td><td>60</td><td>60</td><td>60</td></tr>
+<tr><td>test1/cskapi/api/child/180/avatar-29</td><td>1</td><td>0</td><td>0%</td><td>60</td><td>60</td><td>60</td><td>60</td><td>60</td><td>60</td></tr>
+<tr><td>test1/cskapi/api/about/image/11-15</td><td>1</td><td>0</td><td>0%</td><td>51</td><td>51</td><td>51</td><td>51</td><td>51</td><td>51</td></tr>
+<tr><td>test1/cskapi/api/child/237-43</td><td>1</td><td>0</td><td>0%</td><td>48</td><td>48</td><td>48</td><td>48</td><td>48</td><td>48</td></tr>
+<tr><td>test1/cskapi/api/child/239-39</td><td>1</td><td>0</td><td>0%</td><td>43</td><td>43</td><td>43</td><td>43</td><td>43</td><td>43</td></tr>
+<tr><td>test1/cskapi/api/child/238/growth/monitoring-42</td><td>1</td><td>0</td><td>0%</td><td>43</td><td>43</td><td>43</td><td>43</td><td>43</td><td>43</td></tr>
+<tr><td>test1/cskapi/api/child/239/growth/monitoring-40</td><td>1</td><td>0</td><td>0%</td><td>41</td><td>41</td><td>41</td><td>41</td><td>41</td><td>41</td></tr>
+<tr><td>test1/cskapi/api/child/167/avatar-32</td><td>1</td><td>0</td><td>0%</td><td>35</td><td>35</td><td>35</td><td>35</td><td>35</td><td>35</td></tr>
+<tr><td>test1/cskapi/api/about-13</td><td>1</td><td>0</td><td>0%</td><td>29</td><td>29</td><td>29</td><td>29</td><td>29</td><td>29</td></tr>
+<tr><td>test1/cskapi/api/child/254/growth/monitoring-26</td><td>1</td><td>0</td><td>0%</td><td>28</td><td>28</td><td>28</td><td>28</td><td>28</td><td>28</td></tr>
+<tr><td>test1/cskapi/api/auth/menu-3</td><td>1</td><td>0</td><td>0%</td><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td></tr>
+<tr><td>test1/cskapi/api/question/observation/paged-12</td><td>1</td><td>0</td><td>0%</td><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td></tr>
+<tr><td>test1/cskapi/api/child/236/growth/monitoring-46</td><td>1</td><td>0</td><td>0%</td><td>26</td><td>26</td><td>26</td><td>26</td><td>26</td><td>26</td></tr>
+<tr><td>test1/cskapi/api/child/254/growth/monitoring-96</td><td>1</td><td>0</td><td>0%</td><td>26</td><td>26</td><td>26</td><td>26</td><td>26</td><td>26</td></tr>
+<tr><td>test1/cskapi/api/child/paged-9</td><td>1</td><td>0</td><td>0%</td><td>24</td><td>24</td><td>24</td><td>24</td><td>24</td><td>24</td></tr>
+<tr><td>test1/cskapi/api/child/254-36</td><td>1</td><td>0</td><td>0%</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td></tr>
+<tr><td>test1/cskapi/api/about-83</td><td>1</td><td>0</td><td>0%</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td></tr>
+<tr><td>test1/cskapi/api/child/235/growth/monitoring-48</td><td>1</td><td>0</td><td>0%</td><td>22</td><td>22</td><td>22</td><td>22</td><td>22</td><td>22</td></tr>
+<tr><td>test1/cskapi/api/child/240/growth/monitoring-38</td><td>1</td><td>0</td><td>0%</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td></tr>
+<tr><td>test1/cskapi/api/child/167/avatar-102</td><td>1</td><td>0</td><td>0%</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td></tr>
+<tr><td>test1/cskapi/api/child/254/growth/monitoring-34</td><td>1</td><td>0</td><td>0%</td><td>19</td><td>19</td><td>19</td><td>19</td><td>19</td><td>19</td></tr>
+<tr><td>test1/cskapi/api/child/254-33</td><td>1</td><td>0</td><td>0%</td><td>18</td><td>18</td><td>18</td><td>18</td><td>18</td><td>18</td></tr>
+<tr><td>test1/cskapi/api/child/237/growth/monitoring-44</td><td>1</td><td>0</td><td>0%</td><td>17</td><td>17</td><td>17</td><td>17</td><td>17</td><td>17</td></tr>
+<tr><td>test1/cskapi/api/onboarding-4</td><td>1</td><td>0</td><td>0%</td><td>17</td><td>17</td><td>17</td><td>17</td><td>17</td><td>17</td></tr>
+<tr><td>test1/cskapi/api/child/235/growth/monitoring-56</td><td>1</td><td>0</td><td>0%</td><td>17</td><td>17</td><td>17</td><td>17</td><td>17</td><td>17</td></tr>
+<tr><td>test1/cskapi/api/question/directions-8</td><td>1</td><td>0</td><td>0%</td><td>17</td><td>17</td><td>17</td><td>17</td><td>17</td><td>17</td></tr>
+<tr><td>test1/cskapi/api/child/235/detection/history/trends-55</td><td>1</td><td>0</td><td>0%</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td></tr>
+<tr><td>test1/cskapi/api/child/238-41</td><td>1</td><td>0</td><td>0%</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td></tr>
+<tr><td>test1/cskapi/api/child/254-103</td><td>1</td><td>0</td><td>0%</td><td>15</td><td>15</td><td>15</td><td>15</td><td>15</td><td>15</td></tr>
+<tr><td>test1/cskapi/api/question/directions-11</td><td>1</td><td>0</td><td>0%</td><td>15</td><td>15</td><td>15</td><td>15</td><td>15</td><td>15</td></tr>
+<tr><td>test1/cskapi/api/child/254-24</td><td>1</td><td>0</td><td>0%</td><td>15</td><td>15</td><td>15</td><td>15</td><td>15</td><td>15</td></tr>
+<tr><td>test1/cskapi/api/child/235/quizattempts/quiz-history-49</td><td>1</td><td>0</td><td>0%</td><td>15</td><td>15</td><td>15</td><td>15</td><td>15</td><td>15</td></tr>
+<tr><td>test1/cskapi/api/question/ages-10</td><td>1</td><td>0</td><td>0%</td><td>13</td><td>13</td><td>13</td><td>13</td><td>13</td><td>13</td></tr>
+    </tbody>
+  </table>
+</body>
+</html>

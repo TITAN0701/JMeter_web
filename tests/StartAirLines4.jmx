@@ -13442,26 +13442,6 @@ if (subResults.length &gt; 0) {
         <boolProp name="CacheManager.controlledByThread">false</boolProp>
       </CacheManager>
       <hashTree/>
-      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="true">
-        <collectionProp name="DNSCacheManager.servers"/>
-        <collectionProp name="DNSCacheManager.hosts">
-          <elementProp name="https://www.starlux-airlines.com/zh-TW" elementType="StaticHost">
-            <stringProp name="StaticHost.Name">https://www.starlux-airlines.com/zh-TW</stringProp>
-            <stringProp name="StaticHost.Address"></stringProp>
-          </elementProp>
-          <elementProp name="https://www.starlux-airlines.com/zh-TW/special-event/flight-status?date=20250614&amp;airports=HKG%2FMFM" elementType="StaticHost">
-            <stringProp name="StaticHost.Name">https://www.starlux-airlines.com/zh-TW/special-event/flight-status?date=20250614&amp;airports=HKG%2FMFM</stringProp>
-            <stringProp name="StaticHost.Address"></stringProp>
-          </elementProp>
-          <elementProp name="https://ecapi.starlux-airlines.com/flightSchedule/v2/flight-status-erc?date=20250614&amp;airports=HKG%2FMFM" elementType="StaticHost">
-            <stringProp name="StaticHost.Name">https://ecapi.starlux-airlines.com/flightSchedule/v2/flight-status-erc?date=20250614&amp;airports=HKG%2FMFM</stringProp>
-            <stringProp name="StaticHost.Address"></stringProp>
-          </elementProp>
-        </collectionProp>
-        <boolProp name="DNSCacheManager.clearEachIteration">true</boolProp>
-        <boolProp name="DNSCacheManager.isCustomResolver">true</boolProp>
-      </DNSCacheManager>
-      <hashTree/>
       <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
         <collectionProp name="AuthManager.auth_list"/>
         <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
@@ -13536,9 +13516,9 @@ if (subResults.length &gt; 0) {
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Starline Group" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Starline Group"/>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="STARLUX Home Page (https://www.starlux-airlines.com/zh-TW)" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="STARLUX Home Page (https://www.starlux-airlines.com/zh-TW)">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
@@ -52891,12 +52871,12 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </ResultCollector>
             <hashTree/>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Flight Status API (https://ecapi.starlux-airlines.com/flightSchedule/v2/flight-status-erc?date=20250614&amp;airports=HKG%2FMFM)" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Flight Status API (https://ecapi.starlux-airlines.com/flightSchedule/v2/flight-status-erc?date=20250614&amp;airports=HKG%2FMFM)">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Flight Status API Request" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Flight Status API Request">
               <stringProp name="HTTPSampler.domain">ecapi.starlux-airlines.com</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -52925,7 +52905,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
+              <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion">
                 <stringProp name="JSON_PATH">$.success</stringProp>
                 <stringProp name="EXPECTED_VALUE">true</stringProp>
                 <boolProp name="JSONVALIDATION">true</boolProp>
@@ -52934,7 +52914,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
                 <boolProp name="ISREGEX">false</boolProp>
               </JSONPathAssertion>
               <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code is 200" enabled="true">
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Code is 200">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="49586">200</stringProp>
                 </collectionProp>
@@ -53046,31 +53026,6 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
                 </elementProp>
               </collectionProp>
             </Arguments>
-            <hashTree/>
-            <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
-              <stringProp name="HTTPSampler.domain">ecapi.starlux-airlines.com</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.path">/flightSchedule/v2/flight-status-erc</stringProp>
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
-                <collectionProp name="Arguments.arguments">
-                  <elementProp name="date" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">${FLIGHT_DATE}</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                    <stringProp name="Argument.name">date</stringProp>
-                  </elementProp>
-                  <elementProp name="airports" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">${AIRPORTS}</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                    <stringProp name="Argument.name">airports</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </elementProp>
-              <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
-            </ConfigTestElement>
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track-198" enabled="true">
@@ -72463,6 +72418,87 @@ if (!sampleResult.isSuccessful()) {
           <stringProp name="scriptLanguage">groovy</stringProp>
         </JSR223Listener>
         <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group (CDN Test)" enabled="true">
+        <intProp name="ThreadGroup.num_threads">1</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <stringProp name="LoopController.loops">1</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </ThreadGroup>
+      <hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request">
+            <stringProp name="HTTPSampler.path">/zh-TW</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="true">
+            <collectionProp name="DNSCacheManager.servers"/>
+            <collectionProp name="DNSCacheManager.hosts">
+              <elementProp name="${WEB_HOST}" elementType="StaticHost">
+                <stringProp name="StaticHost.Name">${WEB_HOST}</stringProp>
+                <stringProp name="StaticHost.Address">${CDN_IP}</stringProp>
+              </elementProp>
+            </collectionProp>
+            <boolProp name="DNSCacheManager.clearEachIteration">true</boolProp>
+            <boolProp name="DNSCacheManager.isCustomResolver">true</boolProp>
+          </DNSCacheManager>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="WEB_HOST" elementType="Argument">
+                <stringProp name="Argument.name">WEB_HOST</stringProp>
+                <stringProp name="Argument.value">www.starlux-airlines.com</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="CDN_IP" elementType="Argument">
+                <stringProp name="Argument.name">CDN_IP</stringProp>
+                <stringProp name="Argument.value">34.81.90.144</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="HOME_PATH" elementType="Argument">
+                <stringProp name="Argument.name">HOME_PATH</stringProp>
+                <stringProp name="Argument.value">/zh-TW</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </Arguments>
+          <hashTree/>
+          <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+            <stringProp name="HTTPSampler.domain">${WEB_HOST}</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          </ConfigTestElement>
+          <hashTree/>
+        </hashTree>
       </hashTree>
     </hashTree>
   </hashTree>
