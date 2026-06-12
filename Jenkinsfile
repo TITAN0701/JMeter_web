@@ -10,7 +10,7 @@ pipeline {
     parameters {
         string(
             name: 'TEST_PLAN',
-            defaultValue: 'Test Plan_0408_light.jmx',
+            defaultValue: 'tests/StartAirLines4.jmx',
             description: '[Basic] JMX path relative to Jenkins workspace.'
         )
         string(
@@ -21,7 +21,7 @@ pipeline {
 
         string(
             name: 'CONTROLLER_INDEX',
-            defaultValue: '6',
+            defaultValue: '10',
             description: '[Controller] 1-based Simple/Transaction Controller position. Recommended when names contain Chinese.'
         )
         string(
@@ -42,7 +42,7 @@ pipeline {
 
         string(
             name: 'THREAD_GROUP_NAME',
-            defaultValue: 'WETPAINT Group',
+            defaultValue: 'Thread Group',
             description: '[Thread Group] Thread Group to override. Empty applies to all Thread Groups.'
         )
         string(

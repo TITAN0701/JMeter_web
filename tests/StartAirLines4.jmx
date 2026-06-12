@@ -52871,13 +52871,13 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </ResultCollector>
             <hashTree/>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Flight Status API (https://ecapi.starlux-airlines.com/flightSchedule/v2/flight-status-erc?date=20250614&amp;airports=HKG%2FMFM)">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Flight Status API (https://ecapi-uat.starlux-airlines.com/flightSchedule/v2/flight-status-erc?date=20250614&amp;airports=HKG%2FMFM)">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Flight Status API Request">
-              <stringProp name="HTTPSampler.domain">ecapi.starlux-airlines.com</stringProp>
+              <stringProp name="HTTPSampler.domain">ecapi-uat.starlux-airlines.com</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">/flightSchedule/v2/flight-status-erc</stringProp>
