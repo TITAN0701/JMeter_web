@@ -1,7 +1,7 @@
 # === JMeter CLI Runner (output JTL + HTML report) ===
 param(
     [string]$JMeterBin = "C:\Users\suppo\Desktop\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\jmeter.bat",
-    [string]$TestPlan = "C:\Users\suppo\Desktop\JMeter\tests\20260204_3.jmx",
+    [string]$TestPlan = "C:\Users\suppo\Desktop\JMeter\tests\StartAirLines4.jmx",
     [string]$OutDir = "C:\Users\suppo\Desktop\JMeter\reports",
     [switch]$UseRemote,
     [string]$RemoteHosts = "",
