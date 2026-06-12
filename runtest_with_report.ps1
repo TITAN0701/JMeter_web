@@ -309,6 +309,7 @@ try {
         $rawJmx = [regex]::Replace($rawJmx, $controllerPattern, {
             param($m)
             $tag = $m.Value
+            $isGeneric = $tag -match '<GenericController\b'
             $nameMatch = [regex]::Match($tag, 'testname="([^"]*)"')
             $name = if ($nameMatch.Success) { $nameMatch.Groups[1].Value } else { "" }
 
@@ -333,11 +334,11 @@ try {
                 } elseif ($tag -notmatch 'enabled="') {
                     $newTag = [regex]::Replace($tag, '(<(?:GenericController|TransactionController)\b)', '$1 enabled="true"', 1)
                 }
-            } else {
+            } elseif (-not $isGeneric) {
                 if ($tag -match 'enabled="true"') {
                     $newTag = [regex]::Replace($tag, 'enabled="true"', 'enabled="false"', 1)
                 } elseif ($tag -notmatch 'enabled="') {
-                    $newTag = [regex]::Replace($tag, '(<(?:GenericController|TransactionController)\b)', '$1 enabled="false"', 1)
+                    $newTag = [regex]::Replace($tag, '(<TransactionController\b)', '$1 enabled="false"', 1)
                 }
             }
 
