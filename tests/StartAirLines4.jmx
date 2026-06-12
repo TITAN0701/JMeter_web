@@ -13518,7 +13518,7 @@ if (subResults.length &gt; 0) {
       <hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Starline Group"/>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="STARLUX Home Page (https://www.starlux-airlines.com/zh-TW)">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="STARLUX Home Page (https://www.starlux-airlines.com/zh-TW)" enabled="false">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
@@ -38153,7 +38153,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </ResultCollector>
             <hashTree/>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Flight Status Page (https://www.starlux-airlines.com/zh-TW/special-event/flight-status?date=20250614&amp;airports=HKG%2FMFM)" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Flight Status Page (https://www.starlux-airlines.com/zh-TW/special-event/flight-status?date=20250614&amp;airports=HKG%2FMFM)" enabled="false">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
