@@ -21,8 +21,8 @@ pipeline {
 
         string(
             name: 'CONTROLLER_INDEX',
-            defaultValue: '10',
-            description: '[Controller] 1-based Simple/Transaction Controller position. Recommended when names contain Chinese.'
+            defaultValue: '',
+            description: '[Controller] 1-based Simple/Transaction Controller position. Empty = use JMX enabled settings as-is.'
         )
         string(
             name: 'CONTROLLER_NAME',
