@@ -543,6 +543,13 @@ $SummaryReport = Join-Path $OutDir ("summary_{0}.html" -f $Timestamp)
 
 New-Item -ItemType Directory -Path $OutDir -Force | Out-Null
 
+$CustomPropsFile = Join-Path (Split-Path -Parent $TestPlan) "jmeter-custom.properties"
+$customPropsArgs = @()
+if (Test-Path $CustomPropsFile) {
+    $customPropsArgs = @("-q", $CustomPropsFile)
+    Write-Host "Custom Props: $CustomPropsFile"
+}
+
 Write-Host "JMeter Bin : $JMeterBin"
 Write-Host "Test Plan  : $TestPlan"
 if ($TestPlanToRun -ne $TestPlan) {
@@ -562,10 +569,10 @@ if ($UseRemote) {
         exit 1
     }
     Write-Host "Mode: remote ($RemoteHosts)"
-    & $JMeterBin -n -t $TestPlanToRun -l $ResultFile -R $RemoteHosts
+    & $JMeterBin @customPropsArgs -n -t $TestPlanToRun -l $ResultFile -R $RemoteHosts
 } else {
     Write-Host "Mode: local"
-    & $JMeterBin -n -t $TestPlanToRun -l $ResultFile
+    & $JMeterBin @customPropsArgs -n -t $TestPlanToRun -l $ResultFile
 }
 
 if (Test-Path $ResultFile) {
@@ -575,7 +582,7 @@ if (Test-Path $ResultFile) {
         if ($null -ne $sampleCount) {
             Write-Host ("Sample rows: {0}" -f $sampleCount)
         }
-        $reportArgs = @("-g", $ResultFile, "-o", $ReportDir)
+        $reportArgs = @() + $customPropsArgs + @("-g", $ResultFile, "-o", $ReportDir)
         if ($EnableCustomGraphs -and -not [string]::IsNullOrWhiteSpace($CustomGraphMetric)) {
             $graphId = "custom_{0}" -f ($CustomGraphMetric -replace "[^A-Za-z0-9_]", "_")
             $yAxis = if ([string]::IsNullOrWhiteSpace($CustomGraphTitle)) { $CustomGraphMetric } else { $CustomGraphTitle }
