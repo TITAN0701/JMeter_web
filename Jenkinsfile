@@ -95,6 +95,13 @@ pipeline {
                     New-Item -ItemType Directory -Path "$env:WORKSPACE\\reports" -Force | Out-Null
                     Remove-Item -Path "$env:WORKSPACE\\reports\\results_*.jtl" -Force -ErrorAction SilentlyContinue
                     Remove-Item -Path "$env:WORKSPACE\\reports\\html_*" -Recurse -Force -ErrorAction SilentlyContinue
+
+                    $jmeterBin = Split-Path -Parent $env:JMETER_BIN
+                    $srcProps = Join-Path $env:WORKSPACE "tests\\user.properties"
+                    if (Test-Path $srcProps) {
+                        Copy-Item $srcProps "$jmeterBin\\user.properties" -Force
+                        Write-Host "Synced user.properties to $jmeterBin"
+                    }
                 '''
             }
         }
