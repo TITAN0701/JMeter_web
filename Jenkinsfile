@@ -52,8 +52,8 @@ pipeline {
         )
         string(
             name: 'LOOP_COUNT',
-            defaultValue: '1',
-            description: '[Thread Group] Loop count override.'
+            defaultValue: '-1',
+            description: '[Thread Group] Loop count override. Use -1 for duration-based testing.'
         )
         string(
             name: 'RAMP_UP',
