@@ -13516,7 +13516,7 @@ if (subResults.length &gt; 0) {
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="STARLUX Home Page (https://www.starlux-airlines.com/zh-TW)" enabled="false">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="STARLUX Home Page (https://www.starlux-airlines.com/zh-TW)">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -38151,7 +38151,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Flight Status Page (https://www.starlux-airlines.com/zh-TW/special-event/flight-status?date=20250614&amp;airports=HKG%2FMFM)" enabled="false">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Flight Status Page (https://www.starlux-airlines.com/zh-TW/special-event/flight-status?date=20250614&amp;airports=HKG%2FMFM)">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -52883,6 +52883,8 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <stringProp name="HTTPSampler.connect_timeout">10000</stringProp>
+            <stringProp name="HTTPSampler.response_timeout">30000</stringProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="date" elementType="HTTPArgument">
@@ -72242,7 +72244,7 @@ en=webHomeCarouselControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addC
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -72376,7 +72378,7 @@ en=webHomeCarouselControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addC
           </kg.apc.jmeter.perfmon.PerfMonCollector>
           <hashTree/>
         </hashTree>
-        <JSR223Listener guiclass="TestBeanGUI" testclass="JSR223Listener" testname="JSR223 Listener" enabled="true">
+        <JSR223Listener guiclass="TestBeanGUI" testclass="JSR223Listener" testname="JSR223 Listener">
           <stringProp name="cacheKey">true</stringProp>
           <stringProp name="filename"></stringProp>
           <stringProp name="parameters"></stringProp>
@@ -72395,7 +72397,7 @@ if (responseTime &gt; durationThreshold) {
           <stringProp name="scriptLanguage">groovy</stringProp>
         </JSR223Listener>
         <hashTree/>
-        <JSR223Listener guiclass="TestBeanGUI" testclass="JSR223Listener" testname="JSR223 Listener" enabled="true">
+        <JSR223Listener guiclass="TestBeanGUI" testclass="JSR223Listener" testname="JSR223 Listener">
           <stringProp name="cacheKey">true</stringProp>
           <stringProp name="filename"></stringProp>
           <stringProp name="parameters"></stringProp>
@@ -72419,7 +72421,7 @@ if (!sampleResult.isSuccessful()) {
         </JSR223Listener>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group (CDN Test)" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group (CDN Test)">
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
