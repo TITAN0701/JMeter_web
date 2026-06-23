@@ -79,24 +79,45 @@ function Get-FileSetSizeBytes {
 function Get-ProcessMetrics {
     param(
         [Parameter(Mandatory = $true)]$ProcessRows,
-        [Parameter(Mandatory = $true)]$PerfRows,
         [Parameter(Mandatory = $true)][scriptblock]$Filter
     )
 
     $matched = @($ProcessRows | Where-Object $Filter)
     $ids = @($matched | Select-Object -ExpandProperty ProcessId)
-    $perfMatched = @($PerfRows | Where-Object { $ids -contains $_.IDProcess })
 
-    $cpu = ($perfMatched | Measure-Object -Property PercentProcessorTime -Sum).Sum
+    $cpuPercent = 0
+    if ($ids.Count -gt 0) {
+        try {
+            $logicalCores = (Get-CimInstance Win32_ComputerSystem).NumberOfLogicalProcessors
+            $snap1 = Get-CimInstance Win32_PerfRawData_PerfProc_Process |
+                Where-Object { $ids -contains $_.IDProcess }
+            Start-Sleep -Milliseconds 500
+            $snap2 = Get-CimInstance Win32_PerfRawData_PerfProc_Process |
+                Where-Object { $ids -contains $_.IDProcess }
+
+            $totalCpu = 0
+            foreach ($s2 in $snap2) {
+                $s1 = $snap1 | Where-Object { $_.IDProcess -eq $s2.IDProcess } | Select-Object -First 1
+                if ($null -ne $s1 -and $s2.Timestamp_Sys100NS -ne $s1.Timestamp_Sys100NS) {
+                    $delta = ($s2.PercentProcessorTime - $s1.PercentProcessorTime) / ($s2.Timestamp_Sys100NS - $s1.Timestamp_Sys100NS) * 100
+                    $totalCpu += $delta
+                }
+            }
+            if ($logicalCores -gt 0) {
+                $cpuPercent = [Math]::Round($totalCpu / $logicalCores, 2)
+            }
+        } catch {
+            $cpuPercent = 0
+        }
+    }
+
     $memoryBytes = ($matched | Measure-Object -Property WorkingSetSize -Sum).Sum
-
-    if ($null -eq $cpu) { $cpu = 0 }
     if ($null -eq $memoryBytes) { $memoryBytes = 0 }
 
     return @{
-        Count = $matched.Count
-        CpuPercent = [Math]::Round([double]$cpu, 2)
-        MemoryMb = [Math]::Round(([double]$memoryBytes / 1MB), 2)
+        Count      = $matched.Count
+        CpuPercent = $cpuPercent
+        MemoryMb   = [Math]::Round(([double]$memoryBytes / 1MB), 2)
     }
 }
 
@@ -166,16 +187,13 @@ while ($true) {
         if ($null -eq $networkBytes) { $networkBytes = 0 }
 
         $processRows = Get-CimInstance Win32_Process
-        $perfRows = Get-CimInstance Win32_PerfFormattedData_PerfProc_Process
 
         $javaMetrics = Get-ProcessMetrics `
             -ProcessRows $processRows `
-            -PerfRows $perfRows `
             -Filter { $_.Name -in @("java.exe", "javaw.exe") }
 
         $jmeterMetrics = Get-ProcessMetrics `
             -ProcessRows $processRows `
-            -PerfRows $perfRows `
             -Filter {
                 $_.Name -in @("java.exe", "javaw.exe") -and
                 $_.CommandLine -match "(?i)(ApacheJMeter|jmeter)"
