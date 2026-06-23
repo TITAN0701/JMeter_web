@@ -203,7 +203,8 @@ while ($true) {
         $workspaceSizeMb = [Math]::Round((Get-DirectorySizeBytes -Path $WorkspacePath) / 1MB, 2)
         $jtlSizeMb = [Math]::Round((Get-FileSetSizeBytes -Path $reportsPath -Filter "results_*.jtl") / 1MB, 2)
         $htmlReportSizeBytes = (
-            Get-ChildItem -LiteralPath $reportsPath -Directory -Filter "html_*" -Force -ErrorAction SilentlyContinue |
+            Get-ChildItem -LiteralPath $reportsPath -Force -ErrorAction SilentlyContinue |
+                Where-Object { $_.PSIsContainer -and $_.Name -like "html_*" } |
                 ForEach-Object { Get-DirectorySizeBytes -Path $_.FullName } |
                 Measure-Object -Sum
         ).Sum
