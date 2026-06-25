@@ -76,6 +76,16 @@ pipeline {
             description: '[Thread Group] Treat THREAD_GROUP_NAME as regex.'
         )
         booleanParam(
+            name: 'USE_REMOTE',
+            defaultValue: false,
+            description: '[Remote] Enable JMeter distributed testing (Master/Slave mode).'
+        )
+        string(
+            name: 'REMOTE_HOSTS',
+            defaultValue: '',
+            description: '[Remote] Comma-separated Slave IPs, e.g. 192.168.1.101,192.168.1.102. Required when USE_REMOTE is checked.'
+        )
+        booleanParam(
             name: 'COLLECT_SYSTEM_METRICS',
             defaultValue: true,
             description: '[System] Collect Jenkins/JMeter host CPU, memory, disk, network, process, and workspace metrics.'
@@ -148,6 +158,13 @@ pipeline {
                         $runArgs.ThreadGroupName = "$env:THREAD_GROUP_NAME"
                         if ($env:THREAD_GROUP_REGEX -eq "true") { $runArgs.ThreadGroupRegex = $true }
                         if ($env:THREAD_GROUP_IGNORE_CASE -eq "true") { $runArgs.ThreadGroupIgnoreCase = $true }
+                    }
+
+                    if ($env:USE_REMOTE -eq "true") {
+                        $runArgs.UseRemote = $true
+                        if (-not [string]::IsNullOrWhiteSpace($env:REMOTE_HOSTS)) {
+                            $runArgs.RemoteHosts = "$env:REMOTE_HOSTS"
+                        }
                     }
 
                     try {
