@@ -13504,7 +13504,7 @@ if (subResults.length &gt; 0) {
         <longProp name="randomSeed">0</longProp>
       </PreciseThroughputTimer>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
         <intProp name="ThreadGroup.num_threads">2</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <longProp name="ThreadGroup.duration">0</longProp>
@@ -13521,7 +13521,21 @@ if (subResults.length &gt; 0) {
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/PRG_2026_tcm5-14885.webp-553" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="STARLUX Home Page - Main Request" enabled="true">
+            <stringProp name="HTTPSampler.domain">www.starlux-airlines.com</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">/zh-TW</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" enabled="false" testname="test1/zh-TW/Images/PRG_2026_tcm5-14885.webp-553">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -13585,7 +13599,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/RMQ_2026_tcm5-5281.webp-554" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/RMQ_2026_tcm5-5281.webp-554" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -13649,7 +13663,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/app-store_tcm5-885.png-555" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/app-store_tcm5-885.png-555" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -13713,7 +13727,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/google-play_tcm5-886.png-556" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/google-play_tcm5-886.png-556" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -13777,7 +13791,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/facebook_tcm5-890.svg-557" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/facebook_tcm5-890.svg-557" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -13841,7 +13855,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/youtube_tcm5-891.svg-558" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/youtube_tcm5-891.svg-558" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -13905,7 +13919,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/instagram_tcm5-889.svg-559" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/instagram_tcm5-889.svg-559" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -13969,7 +13983,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/line2_tcm5-7084.svg-560" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/line2_tcm5-7084.svg-560" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -14033,7 +14047,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/system/include/header1.html-561" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/system/include/header1.html-561" enabled="false">
             <stringProp name="HTTPSampler.domain">wcmsapi.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -14108,7 +14122,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/about-us/travel-advisories.html-562" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/about-us/travel-advisories.html-562" enabled="false">
             <stringProp name="HTTPSampler.domain">wcmsapi.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -14183,7 +14197,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/RMQ_Discover_20250730_tcm5-8686.jpg-564" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/RMQ_Discover_20250730_tcm5-8686.jpg-564" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -14247,7 +14261,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/TPE_tcm5-3823.jpg-563" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/TPE_tcm5-3823.jpg-563" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -14311,7 +14325,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/DPS_Discover_480x360_tcm5-8310.jpg-565" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/DPS_Discover_480x360_tcm5-8310.jpg-565" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -14375,7 +14389,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/PRG_Discover_480x360_tcm5-14900.jpg-566" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/PRG_Discover_480x360_tcm5-14900.jpg-566" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -14439,7 +14453,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/PUS_Discover_480x360_tcm5-14901.jpg-567" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/PUS_Discover_480x360_tcm5-14901.jpg-567" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -14503,7 +14517,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/MNL_tcm5-3814.jpg-568" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/MNL_tcm5-3814.jpg-568" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -14567,7 +14581,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/PHX_Discover_596x400_tcm5-12915.jpg-569" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/PHX_Discover_596x400_tcm5-12915.jpg-569" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -14631,7 +14645,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/SHI_Discover_20250730_tcm5-12132.jpg-570" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/SHI_Discover_20250730_tcm5-12132.jpg-570" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -14695,7 +14709,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/starlights-4-2_tcm5-13024_w528_h306_n.jpg-571" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/starlights-4-2_tcm5-13024_w528_h306_n.jpg-571" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -14759,7 +14773,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/starlights_tcm5-15050_w528_h306_n.png-573" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/starlights_tcm5-15050_w528_h306_n.png-573" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -14823,7 +14837,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/SKYTRAX%E5%AE%98%E7%B6%B2%28%E9%A6%96%E9%A0%81%29528X306_tcm5-15269_w528_h306_n.jpg-574" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/SKYTRAX%E5%AE%98%E7%B6%B2%28%E9%A6%96%E9%A0%81%29528X306_tcm5-15269_w528_h306_n.jpg-574" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -14887,7 +14901,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/starlights_tcm5-14818_w528_h306_n.png-572" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/starlights_tcm5-14818_w528_h306_n.png-572" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -14951,7 +14965,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/Shigira2026_600%C3%97350_tcm5-12981_w528_h306_n.jpg-578" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/Shigira2026_600%C3%97350_tcm5-12981_w528_h306_n.jpg-578" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -15015,7 +15029,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/%E7%B7%9A%E4%B8%8A%E6%8A%95%E4%BF%9D%E6%97%85%E5%B9%B3%E9%9A%AA_tcm5-10168_w528_h306_n.jpg-580" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/%E7%B7%9A%E4%B8%8A%E6%8A%95%E4%BF%9D%E6%97%85%E5%B9%B3%E9%9A%AA_tcm5-10168_w528_h306_n.jpg-580" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -15079,7 +15093,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/rmkt/collect/11112930783/?random=1778563337772&amp;cv=11&amp;fst=1778563337772&amp;fmt=8&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be6581v9104444258z8830316967za20gzb830316967zd830316967xec&amp;gcd=13n3n3n3n5l1&amp;dma=0&amp;tag_exp=0~115938465~115938469~118463262~118494633~118719172&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;rcb=2&amp;frm=0&amp;tiba=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=459103485.1778552035&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;_tu=CA&amp;data=event%3Dgtag.config&amp;gcp=5-587" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/rmkt/collect/11112930783/?random=1778563337772&amp;cv=11&amp;fst=1778563337772&amp;fmt=8&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be6581v9104444258z8830316967za20gzb830316967zd830316967xec&amp;gcd=13n3n3n3n5l1&amp;dma=0&amp;tag_exp=0~115938465~115938469~118463262~118494633~118719172&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;rcb=2&amp;frm=0&amp;tiba=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=459103485.1778552035&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;_tu=CA&amp;data=event%3Dgtag.config&amp;gcp=5-587" enabled="false">
             <stringProp name="HTTPSampler.domain">www.google.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -15171,7 +15185,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/pagead/viewthroughconversion/11112930783/-586" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/pagead/viewthroughconversion/11112930783/-586" enabled="false">
             <stringProp name="HTTPSampler.domain">googleads.g.doubleclick.net</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -15458,7 +15472,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/v2/advertiser-585" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/v2/advertiser-585" enabled="false">
             <stringProp name="HTTPSampler.domain">cm.teads.tv</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -15567,7 +15581,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-590" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-590" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -15816,7 +15830,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/pagead/1p-user-list/11112930783/-592" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/pagead/1p-user-list/11112930783/-592" enabled="false">
             <stringProp name="HTTPSampler.domain">www.google.com.tw</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -16133,7 +16147,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/pagead/1p-user-list/11112930783/-593" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/pagead/1p-user-list/11112930783/-593" enabled="false">
             <stringProp name="HTTPSampler.domain">www.google.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -16450,7 +16464,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/publish/force/starlux-airlines-com-600" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/publish/force/starlux-airlines-com-600" enabled="false">
             <stringProp name="HTTPSampler.domain">f1.zenclerk.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -16518,7 +16532,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tag.gif-589" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tag.gif-589" enabled="false">
             <stringProp name="HTTPSampler.domain">tr.line.me</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -16659,7 +16673,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-591" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-591" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -16916,7 +16930,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track-594" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track-594" enabled="false">
             <stringProp name="HTTPSampler.domain">t.teads.tv</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -17039,7 +17053,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track-595" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track-595" enabled="false">
             <stringProp name="HTTPSampler.domain">t.teads.tv</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -17174,7 +17188,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/ccm/collect?rcb=2&amp;frm=0&amp;en=page_view&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;scrsrc=www.googletagmanager.com&amp;rnd=1831024687.1778563338&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;auid=459103485.1778552035&amp;navt=n&amp;npa=0&amp;_tu=CA&amp;gtm=45be6581v9104444258z8830316967za20gzb830316967zd830316967xec&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;dma=0&amp;tag_exp=0~115938465~115938469~118463262~118494633~118719172&amp;apve=1&amp;apvf=f&amp;apvc=1&amp;tids=AW-11112930783&amp;tid=AW-11112930783&amp;tft=1778563337787&amp;tfd=2105-588" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/ccm/collect?rcb=2&amp;frm=0&amp;en=page_view&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;scrsrc=www.googletagmanager.com&amp;rnd=1831024687.1778563338&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;auid=459103485.1778552035&amp;navt=n&amp;npa=0&amp;_tu=CA&amp;gtm=45be6581v9104444258z8830316967za20gzb830316967zd830316967xec&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;dma=0&amp;tag_exp=0~115938465~115938469~118463262~118494633~118719172&amp;apve=1&amp;apvf=f&amp;apvc=1&amp;tids=AW-11112930783&amp;tid=AW-11112930783&amp;tft=1778563337787&amp;tfd=2105-588" enabled="false">
             <stringProp name="HTTPSampler.domain">www.google.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -17266,7 +17280,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/1/i/adsct-598" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/1/i/adsct-598" enabled="false">
             <stringProp name="HTTPSampler.domain">t.co</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -17437,7 +17451,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/1/i/adsct-599" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/1/i/adsct-599" enabled="false">
             <stringProp name="HTTPSampler.domain">analytics.twitter.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -17608,7 +17622,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/1/i/adsct-596" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/1/i/adsct-596" enabled="false">
             <stringProp name="HTTPSampler.domain">analytics.twitter.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -17779,7 +17793,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/1/i/adsct-597" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/1/i/adsct-597" enabled="false">
             <stringProp name="HTTPSampler.domain">t.co</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -17950,7 +17964,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/identify/-602" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/identify/-602" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -18091,7 +18105,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/ce/-613" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/ce/-613" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -18262,7 +18276,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/ce/-611" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/ce/-611" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -18433,7 +18447,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/ce/-610" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/ce/-610" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -18604,7 +18618,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/ce/-608" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/ce/-608" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -18805,7 +18819,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/identify/-601" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/identify/-601" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -18934,7 +18948,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;_s=1&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=page_view&amp;_ee=1&amp;_et=2&amp;tfd=7082-617" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;_s=1&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=page_view&amp;_ee=1&amp;_et=2&amp;tfd=7082-617" enabled="false">
             <stringProp name="HTTPSampler.domain">www.google-analytics.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -19006,7 +19020,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AEAAAAQC&amp;ae=a&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;_s=2&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=scroll&amp;epn.percent_scrolled=90&amp;_et=5916&amp;tfd=13000-628" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AEAAAAQC&amp;ae=a&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;_s=2&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=scroll&amp;epn.percent_scrolled=90&amp;_et=5916&amp;tfd=13000-628" enabled="false">
             <stringProp name="HTTPSampler.domain">www.google-analytics.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -19078,7 +19092,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AEAAAGQC&amp;ae=a&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;_s=1&amp;tag_exp=0~115938465~115938469~118463261&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=scroll&amp;ep.anonymize_ip=true&amp;epn.percent_scrolled=90&amp;_et=5882&amp;tfd=13009-629" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AEAAAGQC&amp;ae=a&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;_s=1&amp;tag_exp=0~115938465~115938469~118463261&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=scroll&amp;ep.anonymize_ip=true&amp;epn.percent_scrolled=90&amp;_et=5882&amp;tfd=13009-629" enabled="false">
             <stringProp name="HTTPSampler.domain">analytics.google.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -19170,7 +19184,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-638" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-638" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -19443,7 +19457,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-639" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-639" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -19725,7 +19739,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-640" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-640" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -19806,7 +19820,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-642" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-642" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -20079,7 +20093,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-643" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-643" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -20361,7 +20375,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-644" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-644" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -20442,7 +20456,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-645" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-645" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -20715,7 +20729,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-646" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-646" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -20997,7 +21011,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-647" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-647" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -21078,7 +21092,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-649" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-649" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -21351,7 +21365,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-650" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-650" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -21633,7 +21647,7 @@ if (subResults.length &gt; 0) {
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=3&amp;tfd=25613-653" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=3&amp;tfd=25613-653" enabled="false">
             <stringProp name="HTTPSampler.domain">www.google-analytics.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -21720,7 +21734,7 @@ en=webHeaderNewsSliderControlBtn&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=Nex
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAGQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;tag_exp=0~115938465~115938469~118463261&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=2&amp;tfd=25614-654" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAGQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;tag_exp=0~115938465~115938469~118463261&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=2&amp;tfd=25614-654" enabled="false">
             <stringProp name="HTTPSampler.domain">analytics.google.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -21827,7 +21841,7 @@ en=webHeaderNewsSliderControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-651" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-651" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -21908,7 +21922,7 @@ en=webHeaderNewsSliderControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-652" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-652" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -21989,7 +22003,7 @@ en=webHeaderNewsSliderControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-655" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-655" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -22262,7 +22276,7 @@ en=webHeaderNewsSliderControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-656" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-656" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -22544,7 +22558,7 @@ en=webHeaderNewsSliderControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/NRT_2026_tcm5-5290.webp-658" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/NRT_2026_tcm5-5290.webp-658" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -22608,7 +22622,7 @@ en=webHeaderNewsSliderControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-657" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-657" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -22689,7 +22703,7 @@ en=webHeaderNewsSliderControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/KMJ_2026_tcm5-5288.webp-660" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/KMJ_2026_tcm5-5288.webp-660" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -22753,7 +22767,7 @@ en=webHeaderNewsSliderControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-659" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-659" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -22834,7 +22848,7 @@ en=webHeaderNewsSliderControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/SHI_2026_tcm5-5286.webp-663" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/SHI_2026_tcm5-5286.webp-663" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -22898,7 +22912,7 @@ en=webHeaderNewsSliderControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/PHX_2026_tcm5-5279.webp-666" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/PHX_2026_tcm5-5279.webp-666" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -22962,7 +22976,7 @@ en=webHeaderNewsSliderControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-661" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-661" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -23043,7 +23057,7 @@ en=webHeaderNewsSliderControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/PUS_2026_tcm5-14884.webp-669" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/PUS_2026_tcm5-14884.webp-669" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -23107,7 +23121,7 @@ en=webHeaderNewsSliderControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-664" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-664" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -23188,7 +23202,7 @@ en=webHeaderNewsSliderControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/MNL_2026_tcm5-5284.webp-671" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/MNL_2026_tcm5-5284.webp-671" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -23252,7 +23266,7 @@ en=webHeaderNewsSliderControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-668" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-668" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -23333,7 +23347,7 @@ en=webHeaderNewsSliderControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-670" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-670" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -23414,7 +23428,7 @@ en=webHeaderNewsSliderControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-672" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-672" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -23495,7 +23509,7 @@ en=webHeaderNewsSliderControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=4&amp;tfd=32707-676" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=4&amp;tfd=32707-676" enabled="false">
             <stringProp name="HTTPSampler.domain">www.google-analytics.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -23584,7 +23598,7 @@ en=webHomeCarouselControlBtn&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=Next&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAGQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;tag_exp=0~115938465~115938469~118463261&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=3&amp;tfd=32714-677" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAGQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;tag_exp=0~115938465~115938469~118463261&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=3&amp;tfd=32714-677" enabled="false">
             <stringProp name="HTTPSampler.domain">analytics.google.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -23693,7 +23707,7 @@ en=webHomeCarouselControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addC
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-684" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-684" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -23966,7 +23980,7 @@ en=webHomeCarouselControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addC
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-685" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-685" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -24248,7 +24262,7 @@ en=webHomeCarouselControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addC
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-686" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-686" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -24329,7 +24343,7 @@ en=webHomeCarouselControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addC
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-689" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-689" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -24602,7 +24616,7 @@ en=webHomeCarouselControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addC
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-690" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-690" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -24884,7 +24898,7 @@ en=webHomeCarouselControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addC
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-691" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-691" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -24965,7 +24979,7 @@ en=webHomeCarouselControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addC
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-693" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-693" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -25238,7 +25252,7 @@ en=webHomeCarouselControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addC
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-694" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-694" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -25520,7 +25534,7 @@ en=webHomeCarouselControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addC
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAGQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;tag_exp=0~115938465~115938469~118463261&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=4&amp;tfd=45841-698" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAGQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;tag_exp=0~115938465~115938469~118463261&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=4&amp;tfd=45841-698" enabled="false">
             <stringProp name="HTTPSampler.domain">analytics.google.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -25625,7 +25639,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=5&amp;tfd=45837-697" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=5&amp;tfd=45837-697" enabled="false">
             <stringProp name="HTTPSampler.domain">www.google-analytics.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -25710,7 +25724,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-695" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-695" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -25791,7 +25805,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-700" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-700" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -26066,7 +26080,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;_s=6&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=webHomeManageTrip&amp;_ee=1&amp;ep.type=addClick&amp;_et=2116&amp;tfd=47503-704" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;_s=6&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=webHomeManageTrip&amp;_ee=1&amp;ep.type=addClick&amp;_et=2116&amp;tfd=47503-704" enabled="false">
             <stringProp name="HTTPSampler.domain">www.google-analytics.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -26138,7 +26152,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-705" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-705" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -26393,7 +26407,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-701" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-701" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -26677,7 +26691,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-706" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-706" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -26941,7 +26955,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/PDBG_tcm5-4150_w247_h116_n.jpg-709" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/PDBG_tcm5-4150_w247_h116_n.jpg-709" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -27005,7 +27019,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/Seat_tcm5-4151_w247_h116_n.jpg-708" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/Seat_tcm5-4151_w247_h116_n.jpg-708" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -27069,7 +27083,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/inflight-dining_tcm5-3759_w247_h116_n.jpg-710" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/inflight-dining_tcm5-3759_w247_h116_n.jpg-710" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -27133,7 +27147,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/beshopping_tcm5-3760_w247_h116_n.jpg-711" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/beshopping_tcm5-3760_w247_h116_n.jpg-711" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -27197,7 +27211,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/join-membership_tcm5-4323_w247_h116_n.jpg-712" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/join-membership_tcm5-4323_w247_h116_n.jpg-712" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -27261,7 +27275,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/_nuxt/3ec4fd2.js-713" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/_nuxt/3ec4fd2.js-713" enabled="false">
             <stringProp name="HTTPSampler.domain">www.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -27325,7 +27339,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/assets/icons/svg/link.svg-714" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/assets/icons/svg/link.svg-714" enabled="false">
             <stringProp name="HTTPSampler.domain">www.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -27393,7 +27407,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/booking/manage-my-trip/manage-my-trip.html-715" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/booking/manage-my-trip/manage-my-trip.html-715" enabled="false">
             <stringProp name="HTTPSampler.domain">wcmsapi.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -27468,7 +27482,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-702" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-702" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -27549,7 +27563,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/assets/icons/svg/checkbox.svg-717" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/assets/icons/svg/checkbox.svg-717" enabled="false">
             <stringProp name="HTTPSampler.domain">www.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -27617,7 +27631,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAACAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;_s=7&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=page_view&amp;_ee=1&amp;_et=90&amp;tfd=48493-720" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAACAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;_s=7&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=page_view&amp;_ee=1&amp;_et=90&amp;tfd=48493-720" enabled="false">
             <stringProp name="HTTPSampler.domain">www.google-analytics.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -27689,7 +27703,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAGQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;_s=5&amp;tag_exp=0~115938465~115938469~118463261&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=webHomeManageTrip&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&amp;_et=2116&amp;tfd=48498-721" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAGQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;_s=5&amp;tag_exp=0~115938465~115938469~118463261&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=webHomeManageTrip&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&amp;_et=2116&amp;tfd=48498-721" enabled="false">
             <stringProp name="HTTPSampler.domain">analytics.google.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -27781,7 +27795,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/ce/-719" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/ce/-719" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -27953,7 +27967,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AEAAAAQC&amp;ae=a&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;_s=8&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dt=%E8%A1%8C%E7%A8%8B%E7%AE%A1%E7%90%86%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=page_view&amp;_et=987&amp;tfd=53503-729" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AEAAAAQC&amp;ae=a&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;_s=8&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dt=%E8%A1%8C%E7%A8%8B%E7%AE%A1%E7%90%86%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=page_view&amp;_et=987&amp;tfd=53503-729" enabled="false">
             <stringProp name="HTTPSampler.domain">www.google-analytics.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -28025,7 +28039,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AEAAAGQC&amp;ae=a&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;_s=6&amp;tag_exp=0~115938465~115938469~118463261&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dt=%E8%A1%8C%E7%A8%8B%E7%AE%A1%E7%90%86%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=page_view&amp;ep.anonymize_ip=true&amp;_et=1081&amp;tfd=53504-730" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AEAAAGQC&amp;ae=a&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;_s=6&amp;tag_exp=0~115938465~115938469~118463261&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dt=%E8%A1%8C%E7%A8%8B%E7%AE%A1%E7%90%86%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=page_view&amp;ep.anonymize_ip=true&amp;_et=1081&amp;tfd=53504-730" enabled="false">
             <stringProp name="HTTPSampler.domain">analytics.google.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -28117,7 +28131,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/index2.html-731" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/index2.html-731" enabled="false">
             <stringProp name="HTTPSampler.domain">wcmsapi.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -28192,7 +28206,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;_gaz=1&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAGQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;_s=7&amp;tag_exp=0~115938465~115938469~118463261&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E8%A1%8C%E7%A8%8B%E7%AE%A1%E7%90%86%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=webHeaderLogoClick&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&amp;ep.value=%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip&amp;_et=5582&amp;tfd=54081-732" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;_gaz=1&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAGQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;_s=7&amp;tag_exp=0~115938465~115938469~118463261&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E8%A1%8C%E7%A8%8B%E7%AE%A1%E7%90%86%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=webHeaderLogoClick&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&amp;ep.value=%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip&amp;_et=5582&amp;tfd=54081-732" enabled="false">
             <stringProp name="HTTPSampler.domain">analytics.google.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -28284,7 +28298,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-736" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-736" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -28527,7 +28541,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;_s=9&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E8%A1%8C%E7%A8%8B%E7%AE%A1%E7%90%86%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=webHeaderLogoClick&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip&amp;_et=5580&amp;tfd=54116-735" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;_s=9&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E8%A1%8C%E7%A8%8B%E7%AE%A1%E7%90%86%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=webHeaderLogoClick&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip&amp;_et=5580&amp;tfd=54116-735" enabled="false">
             <stringProp name="HTTPSampler.domain">www.google-analytics.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -28599,7 +28613,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-737" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-737" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -28851,7 +28865,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/UKB_Discover_20250730_tcm5-11543.jpg-740" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/UKB_Discover_20250730_tcm5-11543.jpg-740" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -28915,7 +28929,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/ONT_Discover_20250730_tcm5-11632.jpg-739" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/ONT_Discover_20250730_tcm5-11632.jpg-739" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -28979,7 +28993,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/CGK_Discover_20250730_tcm5-9688.jpg-742" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/CGK_Discover_20250730_tcm5-9688.jpg-742" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -29043,7 +29057,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/TAK_Discover_20250730_tcm5-10567.jpg-741" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/TAK_Discover_20250730_tcm5-10567.jpg-741" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -29107,7 +29121,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/HKG_Discover_20250730_tcm5-9594.jpg-743" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/HKG_Discover_20250730_tcm5-9594.jpg-743" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -29171,7 +29185,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/SEA_Discover_20250730_tcm5-9396.jpg-744" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/SEA_Discover_20250730_tcm5-9396.jpg-744" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -29235,7 +29249,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/PQC_Discover_20250730_tcm5-9411.jpg-745" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/PQC_Discover_20250730_tcm5-9411.jpg-745" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -29299,7 +29313,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/HKD_Discover_20250730_tcm5-8687.jpg-746" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/HKD_Discover_20250730_tcm5-8687.jpg-746" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -29363,7 +29377,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/CNX_Discover-2_20250730_tcm5-8440.jpg-747" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/CNX_Discover-2_20250730_tcm5-8440.jpg-747" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -29427,7 +29441,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/NGO_Discover_20250730_tcm5-8300.jpg-749" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/NGO_Discover_20250730_tcm5-8300.jpg-749" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -29491,7 +29505,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/KMJ_Discover_20250730_tcm5-8023.jpg-750" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/KMJ_Discover_20250730_tcm5-8023.jpg-750" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -29555,7 +29569,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/SFO_Discover_20250730_tcm5-8299.jpg-748" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/SFO_Discover_20250730_tcm5-8299.jpg-748" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -29619,7 +29633,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/Discover-SDJ_20250730_tcm5-7203.jpg-753" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/Discover-SDJ_20250730_tcm5-7203.jpg-753" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -29683,7 +29697,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/CRK_20250730_tcm5-7931.jpg-751" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/CRK_20250730_tcm5-7931.jpg-751" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -29747,7 +29761,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/Discover-LAX_20250730_tcm5-7209.jpg-752" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/Discover-LAX_20250730_tcm5-7209.jpg-752" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -29811,7 +29825,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/Discover-HAN_20250730_tcm5-7014.jpg-755" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/Discover-HAN_20250730_tcm5-7014.jpg-755" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -29875,7 +29889,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/CEB_20250730_tcm5-3803.jpg-754" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/CEB_20250730_tcm5-3803.jpg-754" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -29939,7 +29953,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/CTS_20250730_tcm5-5425.jpg-756" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/CTS_20250730_tcm5-5425.jpg-756" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -30003,7 +30017,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/system/include/header1.html-757" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/system/include/header1.html-757" enabled="false">
             <stringProp name="HTTPSampler.domain">wcmsapi.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -30078,7 +30092,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/OKA_20250730_tcm5-5424.jpg-758" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/OKA_20250730_tcm5-5424.jpg-758" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -30142,7 +30156,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/FUK_20250730_tcm5-4531.jpg-759" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/FUK_20250730_tcm5-4531.jpg-759" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -30206,7 +30220,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/KUL_20250730_tcm5-3812.jpg-762" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/KUL_20250730_tcm5-3812.jpg-762" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -30270,7 +30284,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/SGN_20250730_tcm5-3810.jpg-761" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/SGN_20250730_tcm5-3810.jpg-761" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -30334,7 +30348,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/SIN_20250730_tcm5-3821.jpg-760" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/SIN_20250730_tcm5-3821.jpg-760" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -30398,7 +30412,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/OSA_20250730_tcm5-3817.jpg-764" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/OSA_20250730_tcm5-3817.jpg-764" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -30462,7 +30476,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/TYO_20250730_tcm5-3824.jpg-763" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/TYO_20250730_tcm5-3824.jpg-763" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -30526,7 +30540,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/BKK_20250730_tcm5-3801.jpg-765" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/BKK_20250730_tcm5-3801.jpg-765" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -30590,7 +30604,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/DAD_20250730_tcm5-3805.jpg-766" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/DAD_20250730_tcm5-3805.jpg-766" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -30654,7 +30668,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/MFM_20250730_tcm5-3813.jpg-767" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/Images/MFM_20250730_tcm5-3813.jpg-767" enabled="false">
             <stringProp name="HTTPSampler.domain">webassets2.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -30718,7 +30732,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-734" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-734" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -30799,7 +30813,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/about-us/travel-advisories.html-769" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/about-us/travel-advisories.html-769" enabled="false">
             <stringProp name="HTTPSampler.domain">wcmsapi.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -30874,7 +30888,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAACAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;_s=10&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E8%A1%8C%E7%A8%8B%E7%AE%A1%E7%90%86%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=page_view&amp;_ee=1&amp;_et=36&amp;tfd=55120-773" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAACAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;_s=10&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dt=%E8%A1%8C%E7%A8%8B%E7%AE%A1%E7%90%86%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=page_view&amp;_ee=1&amp;_et=36&amp;tfd=55120-773" enabled="false">
             <stringProp name="HTTPSampler.domain">www.google-analytics.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -30946,7 +30960,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/ce/-772" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/ce/-772" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -31118,7 +31132,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-778" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-778" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -31391,7 +31405,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AEAAAGQC&amp;ae=a&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;_s=8&amp;tag_exp=0~115938465~115938469~118463261&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=page_view&amp;ep.anonymize_ip=true&amp;_et=1044&amp;tfd=58933-781" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AEAAAGQC&amp;ae=a&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;_s=8&amp;tag_exp=0~115938465~115938469~118463261&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=page_view&amp;ep.anonymize_ip=true&amp;_et=1044&amp;tfd=58933-781" enabled="false">
             <stringProp name="HTTPSampler.domain">analytics.google.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -31483,7 +31497,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AEAAAAQC&amp;ae=a&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;_s=11&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=page_view&amp;_et=1001&amp;tfd=58928-780" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AEAAAAQC&amp;ae=a&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;_s=11&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=page_view&amp;_et=1001&amp;tfd=58928-780" enabled="false">
             <stringProp name="HTTPSampler.domain">www.google-analytics.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -31555,7 +31569,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-779" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-779" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -31837,7 +31851,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-782" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-782" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -31918,7 +31932,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;_s=12&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_et=3805&amp;tfd=63930-797" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;_s=12&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_et=3805&amp;tfd=63930-797" enabled="false">
             <stringProp name="HTTPSampler.domain">www.google-analytics.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -31990,7 +32004,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAGQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;_s=9&amp;tag_exp=0~115938465~115938469~118463261&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=webHomeToolbarOpen&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_et=3801&amp;tfd=63934-798" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAGQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;_s=9&amp;tag_exp=0~115938465~115938469~118463261&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;en=webHomeToolbarOpen&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_et=3801&amp;tfd=63934-798" enabled="false">
             <stringProp name="HTTPSampler.domain">analytics.google.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -32082,7 +32096,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-799" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-799" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -32355,7 +32369,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-800" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-800" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -32637,7 +32651,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-801" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-801" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -32718,7 +32732,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-807" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-807" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -32991,7 +33005,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-808" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-808" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -33273,7 +33287,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=my-trip&amp;_e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=13&amp;tfd=69031-811" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=13&amp;tfd=69031-811" enabled="false">
             <stringProp name="HTTPSampler.domain">www.google-analytics.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -33357,7 +33371,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=flight-status&
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAGQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;tag_exp=0~115938465~115938469~118463261&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=10&amp;tfd=69035-812" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAGQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;tag_exp=0~115938465~115938469~118463261&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=10&amp;tfd=69035-812" enabled="false">
             <stringProp name="HTTPSampler.domain">analytics.google.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -33461,7 +33475,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-809" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-809" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -33542,7 +33556,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-814" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-814" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -33817,7 +33831,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-815" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-815" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -34101,7 +34115,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-816" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-816" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -34182,7 +34196,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-819" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-819" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -34457,7 +34471,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-821" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-821" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -34741,7 +34755,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-820" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-820" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -34822,7 +34836,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-823" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-823" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -35105,7 +35119,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-825" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-825" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -35398,7 +35412,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-824" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-824" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -35479,7 +35493,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-831" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-831" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -35752,7 +35766,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-832" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-832" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -36034,7 +36048,7 @@ en=webHomeToolbarOpen&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=14&amp;tfd=77769-835" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=14&amp;tfd=77769-835" enabled="false">
             <stringProp name="HTTPSampler.domain">www.google-analytics.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -36120,7 +36134,7 @@ en=webUiModalClose&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=%E8%AB%8B%E9%81%B
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAGQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;tag_exp=0~115938465~115938469~118463261&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=11&amp;tfd=77770-834" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAGQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;tag_exp=0~115938465~115938469~118463261&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=11&amp;tfd=77770-834" enabled="false">
             <stringProp name="HTTPSampler.domain">analytics.google.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -36226,7 +36240,7 @@ en=webUiModalClose&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&amp;e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-833" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-833" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -36307,7 +36321,7 @@ en=webUiModalClose&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&amp;e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-840" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-840" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -36586,7 +36600,7 @@ en=webUiModalClose&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&amp;e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-841" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-841" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -36874,7 +36888,7 @@ en=webUiModalClose&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&amp;e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-842" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track/push/-842" enabled="false">
             <stringProp name="HTTPSampler.domain">www.woopra.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -36955,7 +36969,7 @@ en=webUiModalClose&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&amp;e
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=15&amp;tfd=83927-851" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-SET2MP6CES&amp;gtm=45je65b0h2v882878174za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAAQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=15&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;tag_exp=0~115938465~115938469~118463261~118864610&amp;dp=%2Fzh-TW&amp;sid=1778562727&amp;sct=28&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=15&amp;tfd=83927-851" enabled="false">
             <stringProp name="HTTPSampler.domain">www.google-analytics.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -37039,7 +37053,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.type=addClick&amp;ep.value=Open&amp;_et=2
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAGQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;tag_exp=0~115938465~115938469~118463261&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=12&amp;tfd=83928-850" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/g/collect?v=2&amp;tid=G-ETMT297ZWH&amp;gtm=45je6581v889923560za200zb830316967zd830316967&amp;_p=1778563336053&amp;gcs=G111&amp;gcd=13n3n3n3n5l1&amp;npa=0&amp;dma=0&amp;_eu=AAAAAGQC&amp;are=1&amp;cid=2109075132.1769744007&amp;frm=0&amp;pscdl=noapi&amp;rcb=12&amp;sr=1920x1080&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B147.0.7727.102%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.102&amp;uam=&amp;uamb=0&amp;uap=Windows&amp;uapv=19.0.0&amp;uaw=0&amp;ul=zh-tw&amp;gaf=2&amp;tag_exp=0~115938465~115938469~118463261&amp;sid=1778562727&amp;sct=21&amp;seg=1&amp;dl=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW&amp;dr=https%3A%2F%2Fwww.starlux-airlines.com%2Fzh-TW%2Fbooking%2Fmanage-my-trip%2Fmanage-my-trip%3ForderId%26firstName%26lastName&amp;dt=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA%20-%20STARLUX%20Airlines&amp;_tu=CA&amp;_s=12&amp;tfd=83928-850" enabled="false">
             <stringProp name="HTTPSampler.domain">analytics.google.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -37143,7 +37157,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-852" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/tr/-852" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -37416,7 +37430,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-855" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/privacy_sandbox/pixel/register/trigger/-855" enabled="false">
             <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -37698,7 +37712,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/i/adsct-853" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/i/adsct-853" enabled="false">
             <stringProp name="HTTPSampler.domain">t.co</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -37887,7 +37901,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/i/adsct-854" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/i/adsct-854" enabled="false">
             <stringProp name="HTTPSampler.domain">analytics.twitter.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -38156,7 +38170,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/special-event/flight-status-860" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/zh-TW/special-event/flight-status-860">
             <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
             <stringProp name="HTTPSampler.domain">www.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
@@ -52869,13 +52883,15 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Flight Status API (https://ecapi-uat.starlux-airlines.com/flightSchedule/v2/flight-status-erc?date=20250614&amp;airports=HKG%2FMFM)">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Flight Status API (https://ecapi.starlux-airlines.com/flightSchedule/v2/flight-status-erc?date=20250614&amp;airports=HKG%2FMFM)">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Flight Status API Request">
-            <stringProp name="HTTPSampler.domain">ecapi-uat.starlux-airlines.com</stringProp>
+            <intProp name="HTTPSampler.connect_timeout">10000</intProp>
+            <intProp name="HTTPSampler.response_timeout">30000</intProp>
+            <stringProp name="HTTPSampler.domain">ecapi.starlux-airlines.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
             <stringProp name="HTTPSampler.path">/flightSchedule/v2/flight-status-erc</stringProp>
@@ -52883,8 +52899,6 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
-            <stringProp name="HTTPSampler.connect_timeout">10000</stringProp>
-            <stringProp name="HTTPSampler.response_timeout">30000</stringProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="date" elementType="HTTPArgument">
@@ -52999,7 +53013,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </ResultCollector>
             <hashTree/>
           </hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Accept</stringProp>
@@ -53012,7 +53026,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="FLIGHT_DATE" elementType="Argument">
                 <stringProp name="Argument.name">FLIGHT_DATE</stringProp>
@@ -53030,7 +53044,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
         </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Starline Group"/>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track-198">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track-198" enabled="true">
             <stringProp name="HTTPSampler.domain">t.teads.tv</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -53167,7 +53181,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/performance/http-source-199">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/performance/http-source-199" enabled="true">
             <stringProp name="HTTPSampler.domain">l.teads.tv</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -53242,7 +53256,7 @@ en=webHomeBkgCollapse&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addClick&am
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track-200">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="test1/track-200" enabled="true">
             <stringProp name="HTTPSampler.domain">t.teads.tv</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -72244,7 +72258,7 @@ en=webHomeCarouselControlBtn&amp;_ee=1&amp;ep.anonymize_ip=true&amp;ep.type=addC
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -72397,7 +72411,7 @@ if (responseTime &gt; durationThreshold) {
           <stringProp name="scriptLanguage">groovy</stringProp>
         </JSR223Listener>
         <hashTree/>
-        <JSR223Listener guiclass="TestBeanGUI" testclass="JSR223Listener" testname="JSR223 Listener">
+        <JSR223Listener guiclass="TestBeanGUI" testclass="JSR223Listener" testname="JSR223 Listener" enabled="true">
           <stringProp name="cacheKey">true</stringProp>
           <stringProp name="filename"></stringProp>
           <stringProp name="parameters"></stringProp>
@@ -72432,9 +72446,9 @@ if (!sampleResult.isSuccessful()) {
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller"/>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request">
             <stringProp name="HTTPSampler.path">/zh-TW</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -72457,7 +72471,7 @@ if (!sampleResult.isSuccessful()) {
             <boolProp name="DNSCacheManager.isCustomResolver">true</boolProp>
           </DNSCacheManager>
           <hashTree/>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Accept</stringProp>
@@ -72470,7 +72484,7 @@ if (!sampleResult.isSuccessful()) {
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
             <collectionProp name="Arguments.arguments">
               <elementProp name="WEB_HOST" elementType="Argument">
                 <stringProp name="Argument.name">WEB_HOST</stringProp>
@@ -72490,7 +72504,7 @@ if (!sampleResult.isSuccessful()) {
             </collectionProp>
           </Arguments>
           <hashTree/>
-          <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+          <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults">
             <stringProp name="HTTPSampler.domain">${WEB_HOST}</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
